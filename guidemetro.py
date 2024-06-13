@@ -177,7 +177,7 @@ if uploaded_file is not None:
         output = BytesIO()
         writer = pd.ExcelWriter(output, engine='xlsxwriter')
         df_resultats.to_excel(writer, sheet_name='Résultats', index=False)
-        writer.save()
+        writer.close() #Correction de l'erreur 
 
         # Télécharger le fichier Excel
         st.download_button(
