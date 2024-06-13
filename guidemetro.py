@@ -42,11 +42,13 @@ def calcul_pom(delta_sqrt_n):
     # Interpolation linéaire pour les valeurs manquantes
     f = interp1d(table_pom_x, table_pom_y, kind='linear', fill_value="extrapolate")
 
-    # S'assurer que delta_sqrt_n est un nombre simple (int ou float), pas un tableau ni float64
+    # S'assurer que delta_sqrt_n est un nombre, pas un tableau et convertir en float standard
     if isinstance(delta_sqrt_n, (np.ndarray, np.float64)):
         delta_sqrt_n = float(delta_sqrt_n)
 
-    pom = f(delta_sqrt_n)
+    # Forcer le résultat de l'interpolation en float
+    pom = float(f(delta_sqrt_n))
+    
     return round(pom)
 
 # Interface Streamlit
