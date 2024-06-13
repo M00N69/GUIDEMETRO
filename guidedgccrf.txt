@@ -1,0 +1,1020 @@
+NOR: ERNC1415921X 
+Guide de bonnes pratiques concernant les modalités du contrôle métrologique interne à réaliser par les emplisseurs et importateurs, de produits préemballés 
+Plan 
+II 
+A 
+B 
+III 
+A 
+B 
+I 
+2 
+IV 
+A 
+I 
+Préambule 
+Principaux textes applicables 
+Textes réglementaires 
+Documents de référence 
+Généralités 
+Dispositions réglementaires concernant les spécifications métrologiques des lots 
+Dispositions générales concernant les contrôles métrologiques internes des emplisseurs et importateurs 
+Cas général 
+Cas d'utilisation du signe « e» de certification de garantie de conformité 
+Instruments de mesure légaux utilisés pour le contrôle des préemballages IPFNA 
+B 
+IPFA 
+C 
+Jauge étalonnée 
+V 
+A 
+B 
+VI 
+Tare: Analyse de sa variabilité et maîtrise de sa valeur 
+A 
+Seuil de centrage du processus de dosage en fonction de la capabilité machine Préemballages sans apposition du signe «e» 
+Préemballages avec apposition du signe « e» 
+Variabilité de la tare : utilisation d'une tare moyenne ou individuelle 
+B 
+Maîtrise de la valeur moyenne de la tare 
+VII 
+Contrôles à mettre en place par les emplisseurs 
+A 
+Contrôle par trieuse en métrologie légale 
+B 
+Contrôle par échantillonnage 
+1 
+Sans utilisation du signe «<e >> 
+2 
+Avec utilisation du signe « e» 
+VIII 
+Contrôles à mettre en place par les importateurs 
+IX 
+Mise en Conformité ou destination des lots non conformes 
+A 
+Mise en conformité des lots non conformes 
+B 
+Destination des lots définitivement non conformes 
+Liste des méthodes d'analyse pouvant être utilisées pour déterminer la masse volumique et formule de conversion pour déterminer la masse volumique conventionnelle Check-list des points de maîtrise du processus de conditionnement 
+Annexe 1 
+Annexe 2 Annexe 3 Annexe 4 
+Annexe 5 Annexe 6 
+Valeurs de << g » au seuil de confiance de 90 % 
+dessin du signe « e» 
+Efficacité de la carte de contrôle et calcul de la valeur cible de remplissage Erreur maximale tolérée pour les préemballages 
+DGCCRF 
+1/26 
+Guide de bonnes pratiques concernant les modalités du contrôle métrologique interne à réaliser par les emplisseurs et importateurs, de produits préemballés 
+I. 
+Préambule 
+Le décret du 31/01/1978 et son arrêté sur le contrôle métrologique de certains préemballages, qui retranscrivent les dispositions de la directive n° 76-211 du 20/01/1976, ont précisé les spécifications métrologiques des lots de préemballages, décrit les modalités des contrôles effectués par les autorités nationales en charge de l'application de ces textes et posé certaines bases concernant les autocontrôles à réaliser par les responsables de la qualité métrologique des lots de préemballages. Cependant, ces bases assez générales présentent des lacunes et n'entrent pas dans le détail des obligations de moyens ou de performance à la charge des professionnels. Aucune circulaire destinée aux opérateurs, aucune note destinée aux services d'inspection n'ont précisé les modalités d'examen des contrôles internes et de vérification de leur efficacité. La conséquence de cette situation est le constat, par les services de contrôle, d'une faible maîtrise globale du processus de conditionnement et de l'absence de garantie de conformité des lots de préemballages mis sur le marché, par les importateurs et conditionneurs. En corrélation, le taux de non-conformité constaté depuis 2004 sur la base des contrôles officiels enregistrés, concernant les préemballages à quantité nominale constante, est voisin de 20 % et, pour les lots de préemballages avec la garantie de conformité «<e », voisin de 13 %. 
+L'objet du présent guide est de préciser les bonnes pratiques basées sur les dispositions réglementaires en métrologie des préemballages et des instruments, sur la maîtrise statistique des procédés, et sur les outils de gestion de la qualité, de façon à ce que les contrôles internes métrologiques soient plus pertinents et plus efficaces. Sa mise en œuvre est un des moyens devant permettre de mieux garantir la conformité métrologique des lots de préemballages, conformément à l'obligation de résultat imposée réglementairement. 
+11. 
+Principaux textes applicables et documents de référence 
+A. Textes Réglementaires 
+Contrôle métrologique des préemballages 
+✔ Directive n° 76/211 du 20 janvier 1976 relative au préconditionnement en masse ou en volume 
+de certains produits en préemballages 
+✓ Règlement (UE) n° 1169/2011 du 25 octobre 2011 concernant l'information des consommateurs 
+sur les denrées alimentaires 
+✔ Décret n° 78-166 du 31 janvier 1978 modifié sur le contrôle métrologique de certains 
+préemballages 
+✔ Arrêté du 20 octobre 1978 modifié d'application du décret du 31/01/1978 
+✔ Arrêté du 8 octobre 2008 fixant les règles relatives aux quantités nominales de certains produits 
+en préemballages 
+Instruments de mesure 
+✓ Décret n° 91-330 du 27 mars 1991 modifié relatif aux instruments de pesage à fonctionnement 
+non automatique 
+✔ Décret n° 2001-387 du 3 mai 2001 modifié relatif au contrôle des instruments de mesure 
+✓ Décret n° 2006-447 du 12 avril 2006 relatif à la mise sur le marché et la mise en service de 
+certains instruments de mesures 
+Arrêté du 22 juin 1992 relatif aux procédures d'attestation de la conformité des instruments de pesage à fonctionnement non automatique 
+✔ Arrêté du 31 décembre 2001 fixant les modalités d'application de certaines dispositions du 
+décret n° 2001-387 du 3 mai 2001 relatif au contrôle des instruments de mesure 
+DGCCRF 
+2/26 
+✔ Arrêté du 26 mai 2004 modifié relatif aux instruments de pesage à fonctionnement non 
+automatique en service 
+✔ Arrêté du 10 janvier 2006 modifié relatif aux instruments de pesage, à fonctionnement 
+automatique en service 
+Arrêté du 28 avril 2006 modifié fixant les modalités d'application du décret n° 2006-447 du 12 avril 2006 relatif à la mise sur le marché et la mise en service de certains instruments de mesure 
+B. Documents de référence 
+✔ Norme AFNOR NF X06-030 (Guide pour la mise en place de la Maîtrise Statistique des 
+Processus) 
+✓ Norme AFNOR NF X06-031-1, normes ISO 7870-2 et ISO 8258 sur les cartes de contrôle aux 
+mesures 
+✔ Guide WELMEC1 6.4 (Guide pour les emplisseurs et importateurs de produits préemballés 
+portant le signe « e») 
+✔ Guide WELMEC 6.5 (Guide sur les contrôles par les services compétents sur les préemballages 
+marqués du signe « e») 
+✔ Guide WELMEC 6.11 (Guide pour les préemballages dont la quantité varie après 
+conditionnement) 
+✓ Recommandation R.87 de l'Organisation Internationale de Métrologie Légale 
+Généralités 
+A. Dispositions réglementaires concernant les spécifications métrologiques des lots 
+Les valeurs des quantités nominales indiquées sur l'étiquetage des préemballages, ne sont plus déterminées réglementairement, à l'exception des vins et boissons alcoolisées dont les gammes de volumes sont fixées par l'arrêté du 8/10/2008. 
+Le champ d'application du décret n° 78-166 du 31/01/1978 concerne : 
+les produits préemballés 
+à quantité nominale constante 
+exprimée en unités de masse et de volume 
+dont la quantité nominale est supérieure ou égale à 5 g ou 5 ml. 
+Le contenu effectif d'un préemballage est la masse ou le volume qu'il contient réellement. Pour les produits dont la quantité est exprimée en unités de volume, le contenu effectif est apprécié à la température de 20° C, quelle que soit la température à laquelle le remplissage ou le contrôle est effectué. 
+Les spécifications imposées aux lots de produits préemballés rentrant dans le champ d'application ci- dessus sont les suivantes : 
+1 
+critère de la moyenne : le contenu effectif des préemballages du lot ne doit pas être inférieur, en moyenne, à la quantité nominale; 
+critère des défectueux : est «< défectueux » tout préemballage présentant un manquant supérieur à l'erreur maximale tolérée fixée au tableau de l'article 4 du décret du 31/01/1978 (cf. annexe 5). La proportion de préemballages défectueux doit être suffisamment faible pour satisfaire aux tests statistiques de l'administration. Compte tenu du niveau de qualité acceptable de ces tests (NQA 
+1 WELMEC [West European Legal Metrology Cooperation: coopération européenne en métrologie légale] est une coopération entre les services de métrologie légale des Etats membres de l'Union Européenne et l'Association Européenne de Libre Échange. WELMEC établit une approche harmonisée et cohérente de la métrologie légale européenne et édite des guides destinés aux fabricants d'instruments de mesure ou utilisateur de ceux-ci ainsi que pour les utilisateurs de contrôles métrologiques pour vérifier la conformité des préemballages. Ces guides ont un rôle de conseil et n'imposent pas eux-mêmes des restrictions ou des exigences techniques supplémentaires par rapport à celles figurant dans les directives européennes. 
+3/26 
+DGCCRF 
+= 2,5 %), du critère des superdéfectueux (précisé ci-dessous), et du risque de se voir refuser un lot au contrôle officiel (la recommandation OIML R87 prévoit que le niveau de risque de déclarer le lot non conforme dans le cadre du contrôle réalisé par le service d'inspection, doit être inférieur ou égal à 5 %), un taux de défectueux maximal sur le lot, de 2 %, permet d'avoir une forte probabilité d'acceptation pour tous les plans de contrôle officiels aux attributs définis par l'arrêté du 20/10/1978. 
+critère des super-défectueux (concerne les préemballages avec signe «e»; le signe «e» a la forme figurant à l'annexe n° 6). Est << superdéfectueux » tout préemballage présentant un manquant supérieur à deux fois l'erreur maximale visée ci-dessus. Aucun superdéfectueux ne peut porter le signe « e» de garantie de conformité (article 5 du décret du 31/01/1978); ainsi le lot ne doit comprendre aucun superdéfectueux dans ce cas. En termes de statistique, le critère << aucun superdéfectueux » peut être traduit, en fonction de la taille du lot, sous la forme: «< moins de 1 pour N unités du lot. » Dans un souci de simplification trois niveaux sont définis : 
+lot de fabrication inférieur ou égal à 1000 unités : moins de un super-défectueux pour 1 000 unités ; 
+lot de fabrication supérieur à 1 000 unités et inférieur ou égal à 10 000 moins de un super-défectueux pour 10 000 unités ; 
+lot de fabrication supérieur à 10 000 unités : moins de un superdéfectueux pour 100 000 unités. 
+Le lot métrologique de fabrication est constitué par l'ensemble des préemballages, de même quantité nominale, de même modèle (notamment même type d'emballage), de même fabrication (même produit à conditionner sur une période continue), emplis dans un même lieu (notamment même machine : les doseuses ou emplisseuses multi-becs sont considérées comme une même machine). La définition du lot << métrologique » est sous la responsabilité de l'emplisseur; il est recommandé que la taille du lot ne dépasse pas une journée de fabrication, sauf impossibilité de respecter cette limitation. La notion de lot métrologique peut être différente de la notion de lot au sens de l'article R.112-5 du code de la consommation. Par exemple un produit laitier d'un même lot de fabrication homogène, d'une quantité nominale définie, conditionné dans un emballage donné caractérisé par son poids moyen, d'une quantité cible d'emplissage fixée, mais faisant l'objet successivement au cours du conditionnement de plusieurs aromatisations différentes n'ayant pas d'incidence sur la viscosité ou masse volumique du produit et qui serait commercialisé sous des marques et mentions d'étiquetage différentes, pourrait être considéré comme un même lot métrologique de fabrication sous réserve d'assurer une traçabilité avec chaque référence de produit. 
+Le signe «e» apposé sous la responsabilité de l'emplisseur ou de l'importateur est une garantie de conformité métrologique des lots mis sur le marché. Il impose la mise en œuvre de moyens complémentaires spécifiques de contrôle et leur enregistrement, impliquant une maîtrise du processus de conditionnement et une obligation de performance. 
+A noter que le poids net égoutté indiqué pour les denrées présentées sous liquide de couverture ou le poids net déglazuré concernant les denrées type filet de poisson congelé, enrobé d'une couche de glace protectrice, entrent dans le champ d'application du décret du 31/01/1978 et doivent respecter les critères cités ci-dessus. Toutefois pour le critère des défectueux, il a été admis que la valeur de l'erreur maximale tolérée pour ces types de produits, soit doublée, en France. 
+Remarque: Concernant les produits, préemballés ou non, qui sortent du champ d'application du décret du 31/01/1978 (produit non préemballé de forme compacte vendu avec une quantité donnée – par exemple le pain, produit préemballé à quantité nominale variable, produit préemballé dont la quantité est exprimée en unité de longueur, produit préemballé dont la quantité est inférieure à 5 g ou 5 ml ...), il n'existe pas de spécifications réglementaires particulières ni nationales ni européennes. Néanmoins, les dispositions générales réprimant la tromperie sur la quantité ou les pratiques commerciales trompeuses s'appliquent (articles L. 121-1 et suivants et L. 213-1 du code de la consommation). Le fait de ne pas mettre en moyenne, sur un lot défini, la quantité indiquée sur le préemballage constitue sans conteste une infraction à ces dispositions (pratique trompeuse), de telle sorte que le critère de la moyenne défini plus haut, a vocation à s'appliquer de la même façon. Les recommandations émises dans ce guide peuvent donc s'appliquer également à ces produits. 
+DGCCRF 
+4/26 
+Lorsque la quantité est mentionnée sous forme d'un nombre d'unités dans le préemballage, la recommandation OIML R87 [Organisation Internationale de Métrologie Légale] préconise une tolérance zéro de préemballages défectueux (présentant un nombre d'unités inférieur à celui indiqué) si le nombre d'unités indiqué est inférieur ou égale à 50 et une tolérance du nombre de préemballages défectueux de 1% du nombre d'unités indiquée, arrondi à l'entier supérieur, dans le cas contraire. 
+B. Dispositions générales concernant les contrôles métrologiques internes des emplisseurs et importateurs 
+1. Cas général 
+L'article 7 du décret précité prévoit que le contenu effectif d'un préemballage doit être mesuré (mesurage lors de la confection du préemballage) ou contrôlé (contrôle après la phase de remplissage du préemballage) sous la responsabilité de l'emplisseur ou de l'importateur, à l'aide d'un instrument de mesure légal approprié à la nature des opérations à effectuer. Dans ce guide, on entend par instrument de mesure légal, un instrument de mesure utilisé pour un usage réglementé et donc conforme aux exigences de métrologie légale s'appliquant à sa catégorie. L'article 3 de l'arrêté du 20/10/1978 fixe les différents types d'instruments de mesure légaux pouvant être utilisés pour le contrôle métrologique: IPFNA [Instrument de Pesage à Fonctionnement Non Automatique] et jauge étalonnée. Compte tenu de l'évolution technologique depuis 1978, il convient d'autoriser également les trieuses pondérales qui sont des IPFA [Instrument de Pesage à Fonctionnement Automatique] et qui peuvent permettre un contrôle à 100 % des préemballages du lot. L'usage de ces instruments reste conditionné au respect de leurs obligations en métrologie légale. 
+Les instruments servant au conditionnement peuvent être des instruments de mesure légaux ou non. En ce qui concerne les instruments de mesure légaux pouvant servir au remplissage, on trouve des IPFNA essentiellement pour un conditionnement manuel, des doseuses pondérales et des bouteilles récipients- mesures utilisées avec des emplisseuses. 
+Pour les doseuses, même lorsqu'elles sont en métrologie légale, l'arrêté du 20/10/1978 prévoit qu'un instrument légal approprié doit être utilisé pour en vérifier le réglage. Concernant les bouteilles récipients- mesures (BRM), leur erreur maximale tolérée est nettement supérieure à celle des instruments de pesage. De plus, leurs caractéristiques métrologiques sont liées à une température du liquide à 20° C, température qui est rarement celle de l'emplissage; les calibres à apposer sur le goulot pour un modèle donné de BRM, permettant de déterminer le bon niveau de remplissage pour une température donnée, ne sont pas des instruments de mesure légaux. Par ailleurs, la lecture du niveau de remplissage (ménisque inférieur) notamment avec des bouteilles de couleur sombre et/ou avec des liquides foncés, est difficile et aggravée par la présence de mousse ou de bulles générées lors de la phase d'emplissage. Enfin, le contrôle avec BRM ne permet pas un contrôle aux mesures mais seulement un contrôle aux attributs (remplissage bon ou mauvais) moins performant que le contrôle aux mesures à effectif d'échantillon égal. Pour l'ensemble de ces raisons, un instrument légal de contrôle est requis en cas d'utilisation de BRM. 
+En conclusion, dans tous les cas de conditionnement automatisé, un instrument de contrôle ayant la qualité d'instrument de mesure légal est nécessaire pour la réalisation des autocontrôles métrologiques. Pour les produits dont la quantité est indiquée en unité de masse, le contrôle est réalisé à l'aide d'un instrument de pesage; pour les produits dont la quantité est indiquée en unité de volume, le contrôle peut être réalisé directement à l'aide d'une jauge étalonnée possédant un certificat d'étalonnage, ou indirectement par pesée et détermination de la masse volumique. En cas d'utilisation d'une jauge étalonnée, il faut corriger le volume si le mesurage est réalisé à une autre température que celle de 20° C. Concernant la masse volumique, il convient d'utiliser la masse volumique conventionnelle (masse volumique intégrant la poussée de l'air). Il existe plusieurs méthodes d'analyse pour déterminer la masse volumique : certaines donnent la masse volumique conventionnelle, d'autres la masse volumique vraie (masse volumique sans la poussée de l'air). Les différentes méthodes pour déterminer la masse volumique et les formules de conversion pour passer de la masse volumique vraie à la masse volumique conventionnelle, sont indiquées en annexe n° 1. La masse volumique doit être vérifiée aussi souvent que nécessaire en fonction de sa variabilité, et le cas échéant sur chaque lot. 
+DGCCRF 
+5/26 
+Remarque: Pour les préemballages avec unité de longueur, le mesurage peut être réalisé, soit de façon directe en mesurant la longueur à l'aide de mesures matérialisées de longueur, appropriées et conformes à leurs obligations de métrologie légale, soit de façon indirecte par pesée et détermination de la masse linéique, sous réserve de vérification de la constance de cette valeur sur l'ensemble du lot. 
+Le contrôle réalisé par l'emplisseur ou l'importateur est organisé de façon à garantir que les spécifications métrologiques des lots de préemballages sont respectées, le cas échéant en prenant en compte l'erreur statistique liée à un contrôle par échantillonnage pour éviter de conclure à tort à l'acceptabilité des lots. Le contrôle réalisé par l'emplisseur est un contrôle de fabrication permettant la vérification pendant la période de conditionnement que le processus reste bien réglé et, le cas échéant, l'engagement de mesures correctives appropriées en cours de conditionnement. Le contrôle réalisé par l'importateur est un contrôle de réception c'est-à-dire réalisé sur un lot déjà fabriqué. Dans les deux cas, ces contrôles sont différents de ceux mis en œuvre par les services officiels de contrôle, qui sont basés sur des contrôles par échantillonnage type réception, sur des lots déjà conditionnés, avec des tests statistiques minimisant l'erreur alpha (risque de conclure à tort au refus des lots), alors que ceux mis en œuvre par le responsable métrologique du lot doivent minimiser l'erreur béta (risque de conclure à tort à l'acceptation du lot) afin de pouvoir garantir la conformité. Ce point est précisé au second alinéa de l'article 7 de l'arrêté du 20/10/1978 qui indique que le contrôle effectué par les autorités ne peut être assimilé à un contrôle de fabrication. 
+Ces contrôles internes peuvent être des contrôles : 
+à 100% automatique ou manuel 
+par échantillonnage, selon le cas, de fabrication ou de réception. 
+Pour les préemballages constitués de plusieurs emballages ou unités distinctes non emballées, le contrôle réalisé par l'emplisseur peut être basé sur le mesurage ou le contrôle des emballages ou unités distinctes sous réserve de pouvoir garantir la conformité du lot au regard de la quantité nominale indiquée sur le préemballage global. Dans ce cas, pour le critère des défectueux, il convient de rechercher la valeur de E (erreur maximale tolérée) correspondant à la quantité nominale globale et de la diviser par le nombre d'emballages ou unités du préemballage. Exemple préemballage de 500 g constitué de 10 sachets de 50 g qui font l'objet de la procédure de contrôle métrologique chez l'emplisseur; le seuil de défectueux pour 500 g est de 485 g donc la valeur seuil pour les sachets contrôlés est de 485/10 = 48,5 g). L'échelon de l'instrument doit être en relation avec la quantité cible de chaque emballage ou unité pesée et non de la quantité nominale (cf. point IV). 
+Pour les produits soumis à perte de poids après dosage (exemple: cuisson, séchage, congélation, dessiccation, fermentation, égouttage ...), il est rappelé qu'en France, le conditionneur doit respecter les dispositions métrologiques réglementaires, jusqu'au moment du départ des marchandises de l'établissement2. Il est préconisé que le contrôle métrologique interne réglementaire soit réalisé plutôt après la phase de perte de poids dû au processus de fabrication de façon à pouvoir garantir la conformité métrologique des lots, cependant la mise en place de contrôles par mesurage en amont dès le stade du dosage peut permettre de déceler le plus rapidement possible tout déréglage. Dans le cas d'un contrôle réglementaire en amont de la phase de perte de poids, une parfaite maîtrise de la perte de poids liée au processus doit être démontrée et des contrôles par mesurage en aval de cette phase, doivent permettre de vérifier la quantité définitive. 
+En ce qui concerne les importateurs, ceux-ci doivent réaliser ou faire réaliser pour leur compte des contrôles statistiques de réception au moins par sondage en ciblant les références à risque – soit à réception des lots sur le territoire national soit avant départ du pays tiers. La directive 76-211 précise cependant que << l'importateur peut, au lieu d'effectuer le mesurage ou le contrôle, fournir la preuve qu'il s'est entouré de toutes les garanties lui permettant d'assumer sa responsabilité ». En l'espèce, la fourniture des autocontrôles métrologiques du fabricant étranger peut apporter les justifications 
+2 
+Il peut exister des dispositions spécifiques par exemple pour les savons et savonnettes la note commune SRFCQ et SIM du 24/09/1980 prévoit que les contrôles métrologiques doivent être réalisés sur des préemballages réalisés du jour compte tenu de la perte de poids importante de ces produits. 
+DGCCRF 
+6/26 
+adéquates, sous réserve que celles-ci soient compréhensibles par le service de contrôle (c'est-à-dire traduites en français). 
+Au titre de l'article L.212-1 du code de la consommation, l'emplisseur ou l'importateur sont tenus de pouvoir justifier des vérifications et contrôles réalisés, au moyen de procédures et d'enregistrements des mesures et actions correctives. 
+L'exploitation des tolérances statistiques des tests utilisés pour les contrôles officiels, exposés dans le titre III de l'arrêté du 20/10/1978, aboutissant à la mise sur le marché de lots présentant un pourcentage de défectueux supérieur au niveau de qualité acceptable des tests, ou une valeur moyenne effective inférieure à la quantité nominale, ne saurait être tolérée. 
+2. Cas d'utilisation du signe « e» de déclaration de garantie de conformité 
+Le signe «<e », outre les conditions précisées ci-dessus, ne peut être appliqué que sur des préemballages dont la quantité nominale est inférieure ou égale à 101 ou 10 kg. En cas de préemballage de préemballages, le signe « e» est apposé à côté de la quantité nominale du préemballage unitaire ; en cas de préemballages d'emballages ou d'unités non préemballées, le signe «e» est apposé à côté de la quantité nominale globale du préemballage. 
+Cette déclaration de garantie de conformité (article 8 du décret du 31/01/1978) implique une garantie de performance passant par la mise en place d'un plan de maîtrise du processus de remplissage. L'annexe 2 liste les principaux points de maîtrise. 
+En cas de remplissage manuel à l'aide d'un instrument de pesage à fonctionnement non automatique, le contrôle se limite à la vérification régulière du bon fonctionnement de l'instrument, dont les caractéristiques techniques sont notamment prévues à l'article 3 de l'arrêté. La cible à viser par l'opérateur réalisant les préemballages doit être au moins la quantité nominale pour chaque préemballage. En outre, l'IPFNA doit être «< légal » c'est-à-dire conforme aux prescriptions s'appliquant en métrologie légale (notamment être à jour dans les opérations de contrôle en service et, être accompagné de son carnet métrologique). 
+Dans les autres cas, notamment en cas de remplissage automatisé, la mise en place d'un contrôle de fabrication après emplissage, est obligatoire quel que soit le mode de remplissage. Le conditionneur doit pouvoir justifier qu'il maîtrise son processus d'emplissage et qu'il est capable de déceler, au bon moment, les anomalies ayant une incidence sur la conformité des lots. 
+En outre, au regard des préconisations du point 6.2 du guide Welmec 6.4, la conformité aux spécifications métrologiques réglementaires devrait être vérifiée pour chaque fraction horaire de fabrication. La maîtrise du processus devrait conduire à éviter de longues périodes de surdosage et de sous-dosage, même si la globalité du lot est conforme, car aussi bien les contrôles officiels que les contrôles à réception effectués par les clients, et réalisés sur des fractions de lots notoirement plus restreintes que le lot de fabrication, sont susceptibles, dans ces cas d'aboutir, à des rejets de ces fractions de lot. 
+En cas de contrôle statistique par échantillonnage, l'emplisseur doit mettre en place des cartes de contrôle de la moyenne et de la dispersion telles que développées dans la série de normes AFNOR NF X 06-031 dont la NF X 06-031-1 sur les cartes aux mesures, ou dans d'autres normes traitant du même sujet comme la nouvelle série de normes ISO 7870 dont la norme ISO 7870-2 ou encore dans d'autres documents de référence traitant de ce sujet (article 5 de l'arrêté du 20.10.1978). Ces normes insistent sur la recherche des causes de variabilité du processus (utilisation des outils de la gestion de la qualité : exemple Pareto, diagramme cause effets, AMDEC, plans d'expérience, étude de corrélation ...), l'identification des causes assignables (causes de variabilité pouvant être liées à un facteur bien défini) afin de les supprimer, la vérification que la distribution des doses délivrées suit une loi normale, la détermination d'un écart-type de processus optimisé qui permet de déterminer les limites de contrôle (l'écart-type du processus prend en compte la variabilité de la machine servant à l'emplissage mais aussi celle liées à la tare, au produit à doser, au personnel affecté sur la ligne, et à l'environnement de la ligne d'emplissage), et développent la notion de période opérationnelle qui est le nombre d'échantillonnages permettant de déceler un déréglage 
+DGCCRF 
+7/26 
+de la cible de fabrication ou de l'écart-type, pouvant avoir pour conséquence la fabrication d'un lot métrologiquement non conforme. 
+Que le contrôle soit réalisé par échantillonnage ou à 100 %, le préemballeur doit tenir à la disposition des services de contrôle, pendant deux ans au moins, les documents (papier ou électroniques) où sont consignés les résultats des contrôles, afin d'attester que ces derniers ainsi que les corrections et ajustements dont ils ont montré la nécessité, ont été régulièrement et correctement effectués. Ces derniers éléments impliquent la mise en place d'un journal de bord consignant toutes les opérations inhérentes à la ligne de conditionnement (exemple: heures de mises en route et d'arrêt, causes d'arrêt, interventions réalisées, changements d'équipe, heures et nature des réglages sur le système d'emplissage, quantités produites par équipe, heures d'introduction de nouveaux lots de produit à conditionner, relevé de certains paramètres de marche, actions de maintenance, tout ce qui est inhabituel ...). 
+Les marchandises préemballées comportant déjà le signe « e» et introduites en provenance d'un autre Etat membre de l'Union Européenne bénéficient a priori d'une présomption de conformité. L'introducteur n'est pas considéré comme le responsable du mesurage ou du contrôle du contenu des préemballages. Toutefois, en cas de contrôle métrologique, réalisé par le service officiel de contrôle et aboutissant au refus du lot, l'introducteur, en tant que responsable de la mise sur le marché national, en supporte les conséquences juridiques, administratives et pénales. Il importe donc qu'il puisse obtenir des garanties de ses fournisseurs quant à la conformité métrologique effective des lots mis sur le marché, au regard des dispositions de la directive no 76-211. 
+IV. 
+Instruments de mesures légaux utilisés pour le contrôle des préemballages 
+Trois types d'instruments de mesures légaux peuvent être utilisés pour le contrôle des préemballages. 
+A. IPFNA 
+Conformément aux dispositions de l'article 3 de l'arrêté du 20/10/1978, il s'agit d'instruments de classe de précision II ou III, conformes aux dispositions en vigueur relatives aux IPFNA neufs et en service et portant des marques de vérification métrologiques (marquage « CE » de conformité des instruments neufs et marques des opérations de contrôle en service). Le détenteur a la responsabilité de la pérennité et de la tenue à jour du carnet métrologique qui doit être détenu sur le lieu d'utilisation. L'échelon de vérification est fixé réglementairement en fonction de la plage d'utilisation comme indiqué au tableau 1: 
+Echelon de l'instrument de contrôle 
+(en grammes) 
+Tableau 1 
+wwwwwww..... uro.co X : 
+Valeur des quantités nominales (ON) 
+à partir desquelles on peut utiliser l'instrument d'échelon 
+correspondant 
+Toute quantité nominale 
+A partir de 10 g 
+0,1 
+0,2 
+0,5 
+1 
+2 
+5 
+10 
+20 
+50 
+A partir de 50 g 
+A partir de 200 g 
+A partir de 2 kg 
+A partir de 5 kg 
+A partir de 10 kg 
+1/1000° de QNarrondi à la valeur 
+inférieure de l'échelon légal1 
+A partir de 20 kg 
+A partir de 50 kg 
+A partir de 100 kg 
+Outre la vérification périodique annuelle imposée par la réglementation, l'instrument doit faire l'objet d'un suivi régulier de ses performances (notamment au regard de l'erreur maximale tolérée réglementaire 
+Cette ligne n'est pas reprise dans l'arrêté du 20/10/1978 
+DGCCRF 
+8/26 
+en service) à l'aide de masses étalon, avec une fréquence adéquate basée sur une analyse de risque. En cas d'utilisation du signe « e», cette fréquence devrait être au moins hebdomadaire. 
+Ci-dessous figure le tableau des erreurs maximales tolérées en service tirées du décret du 27/03/1991 (e: échelon de vérification de l'instrument; peut être différent de l'échelon d'affichage : d) 
+Classe II 
+0 ≤m≤5 000 e 
+5 000 e<m< 20 000 e 
+Tableau 2 
+Charges (m) 
+Erreur maximale tolérée en service 
+Classe III 
+0 <m< 500 e 
++/- 1 e 
+500 e<m≤ 2 000 e 
++/- 2 e 
+2 000 e<m ≤ 10 000 e 
++/- 3 e 
+20 000 e<m ≤ 100 000 e 
+B. IPFA : trieuse pondérale 
+Les trieuses de préemballages appartiennent à la catégorie plus générale des trieurs-étiqueteurs à fonctionnement automatique. 
+C'est un trieur étiqueteur de catégorie X (trieuse pondérale de contrôle) les autres trieurs-étiqueteurs appartenant à la catégorie Y (non traité ici). Les classes de précision les plus appropriées sont les classes, XII ou XIII. Un facteur désigné par «< x >> complète la classification de ces instruments (voir tableau 5 et exemple associé). 
+Une telle trieuse doit être conforme aux dispositions en vigueur relatives aux instruments de pesage à fonctionnement automatique neuf et en service (marques de vérification métrologique, carnet métrologique). Le détenteur a la responsabilité de la pérennité et de la tenue à jour du carnet métrologique qui doit être détenu sur le lieu d'utilisation. L'échelon de vérification en fonction de la plage d'utilisation est repris du guide WELMEC 6.4 : 
+Echelon de l'instrument 
+chelon de 
+contrôle (en grammes) 
+0,1 
+0,2 
+0,5 
+1 
+2 
+5 
+Tableau 3 
+Valeur des quantités nominales (QN) 
+à partir desquelles on peut utiliser l'instrument d'échelon correspondant 
+Toute quantité nominale 
+A partir de 10 g 
+A partir de 25g 
+A partir de 110 g 
+A partir de 330 g 
+A partir de 1670 g 
+10 
+20 
+A partir de 3330 g A partir de 6670 g 
+Outre la vérification périodique annuelle imposée par la réglementation, l'instrument doit faire l'objet d'un suivi régulier de ses performances à l'aide d'un IPFNA en métrologie légale d'échelon inférieur à celui du trieur étiqueteur, pour ce qui concerne l'erreur maximale tolérée réglementaire en service en mode de fonctionnement normal (pesée avec déplacement du préemballage sur la cellule de pesée) et pour ce qui concerne l'écart-type maximal toléré en service, avec une fréquence adéquate basée sur une analyse de risque. En cas d'utilisation du signe «e», cette fréquence devrait être journalière [La Recommandation OIML R 51 préconise, pour déterminer la valeur conventionnellement vraie d'une charge d'essai, un échelon ne dépassant pas le 1/3 de l'erreur maximale tolérée de la trieuse - voir tableau 4]. 
+- 
+A titre d'exemple repris du guide WELMEC 6.4, ce contrôle peut consister à passer 20 fois le même préemballage - préalablement pesé sur l'IPFNA de contrôle sur la trieuse en mode automatique, à calculer la moyenne et l'écart-type estimé, à les comparer à l'erreur moyenne maximale tolérée (par rapport à la différence entre moyenne trieuse et mesure IPFNA) et à l'écart-type maximal toléré, fixés par l'arrêté du 10/01/2006. En outre la vérification du bon fonctionnement du système d'éjection, des unités défectueuses ou superdéfectueuses, doit également être réalisée. 
+DGCCRF 
+9/26 
+Tableau des erreurs moyennes maximales tolérées en service, tirées de l'arrêté du 10/01/2006 (e: échelon de vérification de l'instrument; peut être différent de l'échelon d'affichage d ces valeurs sont indépendantes de la valeur du facteur «<x>> - voir exemple en bas du tableau 5) 
+- 
+Tableau 4 
+Charges (m) 
+Classe XII 
+Classe XIII 
+Erreur moyenne maximale tolérée en service 
+0≤m≤5 000 e 
+5 000 e<m≤ 20 000 e 
+20 000 em ≤ 100 000 e 
+0 ≤ m≤ 500 e 
+500 e <m≤2 000 e 
+2000 e<m≤ 10 000 e 
++/- 1 e 
++/- 2 e 
++/- 3 e 
+Tableau des valeurs maximales tolérées de l'écart-type d'un instrument de classe X(x) [résultat de la multiplication du facteur (x) par la valeur indiquée dans le tableau ci-dessous - voir exemple en bas du tableau]. 
+Tableau 5 
+Charge nette 
+Ecart-type maximal toléré pour la classe X(1) 
+Charge nette 
+m < 50 g 50 g <m≤ 100 g 
+0,6% 
+0,3 g 
+100 g <m< 200 g 
+0.3% 
+200 g <m ≤ 300 g 
+300 g <m< 500 g 
+0,6 g 0,2% 
+500 g <m< 1000 g 1 000 g <m≤ 10 000 g 10 000 g <m≤ 15 000 g 15 000 g <m 
+Ecart-type maximal toléré pour la classe X(1) 1,0 g 
+0,1% 
+10 g 
+0,067 % 
+Exemple: pour une charge nette de 300 g et une trieuse pondérale de classe XIII (0,5) et d'échelon e = 
+erreur moyenne maximale tolérée de +/- 1 g (voir tableau 4) écart-type maximal toléré de 0,3 g [0,6. 0,5] (voir tableau 5) 
+1g 
+Pour les instruments qui n'ont pas été mis en service en application du décret du 12/04/2006, voir les dispositions spécifiques de l'arrêté du 10/01/2006 modifié. 
+C. Jauge étalonnée 
+Il s'agit d'une jauge appropriée munie d'un certificat d'étalonnage délivré par un laboratoire accrédité par le COFRAC ou autre laboratoire accrédité ayant signé l'accord de reconnaissance. L'échelon de vérification en fonction de la plage d'utilisation est repris du guide WELMEC 6.4 : 
+Echelon de l'instrument de 
+contrôle 
+(en millilitre) 
+0,1 
+0,2 
+0,5 
+1 
+2 
+5 
+10 
+20 
+Tableau 6 
+Valeur des quantités nominales (ON) 
+à partir desquelles on peut utiliser l'instrument d'échelon correspondant 
+Toute quantité nominale 
+A partir de 10 ml 
+A partir de 25ml 
+A partir de 110 ml 
+A partir de 330 ml 
+A partir de 1670 ml A partir de 3330 ml A partir de 6670 ml 
+DGCCRF 
+10/26 
+V. Seuil de centrage du processus de dosage en fonction de la capabilité machine 
+La capabilité machine est la capacité du système de remplissage à fabriquer des lots conformes à la réglementation. Le centrage sur la quantité nominale, en l'absence de tri, peut ne pas être suffisant pour garantir la conformité au regard du critère des défectueux et des superdéfectueux, si l'écart-type de fabrication est important. Il importe donc pour le conditionneur de bien connaître son écart-type de fabrication pour chaque machine et de l'optimiser en supprimant les causes assignables de variabilité, afin d'obtenir une loi de distribution des quantités délivrées assimilable à une loi normale. Si la machine de conditionnement est un système de conditionnement multi-becs (notamment doseuses volumétriques ou emplisseuses), la variabilité et le centrage de chaque bec, doivent être vérifiés régulièrement. 
+Dans le cas d'utilisation d'une trieuse, garantissant la conformité du lot notamment pour le critère des défectueux et le cas échéant celui des superdéfectueux, la valeur seuil de centrage peut être basée sur la quantité nominale mais si l'écart-type du procédé est fort, provoquant un écart de tri important, un surdosage peut s'avérer pertinent. 
+A. Préemballages sans apposition du signe « e » 
+Pour fabriquer des lots ne présentant pas plus de 2 % de défectueux, l'écart-type ne doit pas dépasser une valeur seuil; dans le cas contraire (remplissage peu précis), un surdosage est nécessaire en l'absence de tri: 
+QN 
+Si σo E/2,05 ⇒ Ms = 
+Si σo > E/2,05 ⇒ ms= 
+mg= QN-E + 2,05 σo Avec σo: écart-type du processus, E: erreur en moins maximale tolérée pour le critère des défectueux, ms: seuil de centrage, QN: quantité nominale. 
+B. Préemballages avec apposition du signe « e» 
+Outre le taux de défectueux de 2 % à ne pas dépasser sur le lot, il convient également de ne pas fabriquer de superdéfectueux au regard de l'effectif du lot. 
+Effectif du lot N 
+de 
+Nombre acceptables statistiquement 
+superdéfectueux 
+Valeur de la loi normale centrée réduite correspondant : Uα 
+N≤ 1000 
+Moins de 1 sur 1000 
+3,09 
+1000 N ≤ 10 000 
+Moins de 1 sur 10 000 
+3,71 
+N > 10 000 
+Moins de 1 sur 100 000 
+4,26 
+Si oo 
+E/2,05 
+= 
+ms QN 
+Si 00 > E/2,05 
+ms prend la plus forte valeur issue de l'exploitation des deux formules (défectueux et superdéfectueux), en fonction de l'effectif N 
+N≤ 1000 
+Valeur max entre: QN-E + 2,05 00 
+et 
+QN-2 E + 3,09 σo 
+1000 <N≤ 10 000 
+N > 10 000 
+Valeur max entre: QN-E + 2,05 σo 
+et 
+QN-2 E + 3,71 σo 
+Valeur max entre: QN-E + 2,05 00 
+et 
+QN-2 E + 4,26 00 
+VI. 
+Tare: Analyse de sa variabilité et maîtrise de sa valeur 
+On désigne par le terme « tare » l'ensemble des éléments d'emballage/étiquetage du produit. Dans la majorité des cas, les contrôles sont réalisés en poids brut, c'est à dire le produit avec son emballage 
+DGCCRF 
+11/26 
+(contenu + contenant). La connaissance précise de la valeur de la tare est nécessaire pour déduire le poids net. En cas de forte variabilité de la tare en rapport avec la valeur de la quantité nominale, il faut déterminer la valeur individuelle de la tare pour chaque préemballage pour pouvoir calculer le poids net individuel afin d'éviter des erreurs dans le comptage des défectueux/superdéfectueux. 
+A. Variabilité de la tare : utilisation d'une tare moyenne ou individuelle 
+L'analyse de la tare consiste à déterminer la moyenne et l'écart-type estimé de la tare. L'étude doit être réalisée sur au moins 20 emballages représentatifs de ceux utilisés pour la confection du lot de préemballages (éviter de prendre 20 emballages consécutifs qui pourraient ne pas donner une image fidèle de la variabilité). Lorsque la tare est constituée de plusieurs éléments indépendants, l'analyse de tare sera réalisée en pesant vingt fois ensembles, les différents éléments constituant la tare. 
+L'analyse de la tare aboutit à conclure, soit que le contrôle est réalisé avec une tare moyenne et les pesées des préemballages sont réalisées uniquement en poids brut, soit que le contrôle est réalisé en prenant en compte la masse brute de chaque préemballage et sa tare individuelle, permettant de déduire la masse nette individuelle. 
+Soit st l'écart-type estimé de la tare, et E l'erreur maximale tolérée. Le contrôle est réalisé avec tare individuelle si: 
+St→ E/5 
+Pour les préemballages dont la quantité nominale est exprimée en volume, on recherche la valeur de E en volume. Soit pe la masse volumique conventionnelle du liquide. Le contrôle est réalisé avec tare individuelle si: 
+St> (Pc.E)/5 
+Pour les emballages en verre, il est préconisé de réaliser les contrôles avec tare individuelle sauf à démontrer que la variabilité est suffisamment faible pour supporter un contrôle avec tare moyenne pour tous les lots. 
+La méthode décrite ci-dessus est celle utilisée par les services officiels de contrôle français; il est recommandé d'utiliser cette méthode pour éviter des divergences entre contrôle interne et contrôle officiel. Cependant d'autres méthodes sont décrites dans la Recommandation OIML R.87 et le guide Welmec 6.4. 
+B. Maîtrise de la valeur moyenne de la tare L'utilisation d'une valeur de tare moyenne correcte pour tous les contrôles en poids brut, est un point critique important. En effet, une valeur minorée de la tare moyenne conduit de fait à sous-doser. La valeur moyenne de la tare doit donc être vérifiée aussi souvent que nécessaire, la fréquence de vérification est à définir à partir d'une analyse de risque, et sa valeur arrondie par excès, au moins à l'échelon de vérification de l'instrument de pesage. Des spécifications de poids moyen de tare doivent être définies dans les cahiers des charges et être effectivement contrôlées. Les causes de variation de la tare doivent être maîtrisées. L'évolution de la valeur de la tare moyenne doit être prise en compte sans délai, pour chaque lot, dans les systèmes de calculs. 
+VII. 
+Contrôles à mettre en place par les emplisseurs 
+Le contrôle peut être réalisé soit par trieuse à 100 %, soit par échantillonnage manuel ou automatique, en masse ou le cas échéant en volume pour les produits dont la quantité nominale est en volume. Le couplage trieuse + contrôle par échantillonnage n'est pas nécessaire mais permet éventuellement de renforcer l'efficacité du contrôle. Lorsque le contrôle métrologique règlementaire est réalisé par échantillonnage, la trieuse peut ne pas être en métrologie légale. 
+A. Contrôle par trieuse en métrologie légale 
+Dans le cas d'un contrôle à 100 % automatique par trieuse, la cible de fabrication (QC) correspond a minima à la quantité nominale, augmentée de la valeur de tare moyenne si le contrôle est en poids brut et augmentée éventuellement de l'erreur de mesure positive commise par la trieuse (différence positive 
+DGCCRF 
+12/26 
+entre la moyenne des 20 valeurs de pesées en dynamique sur la trieuse d'un même préemballage, par rapport à la pesée de référence du même préemballage sur l'IPFNA utilisé pour le contrôle de la trieuse : cf. point IV B). Pour les seuils de rejet des défectueux/superdéfectueux, il convient également de prendre en compte l'écart-type intrinsèque de la trieuse en fonctionnement dynamique et l'écart-type de la tare : Seuil défectueux : QN - E+ 2 STG 
+Seuil superdéfectueux : QN - 2E + 2 STG 
+avec STG écart-type estimé global du système de tri 
+2 
+2 
+= STG √STS, 
++ 
+et ST = écart-type estimé intrinsèque de la trieuse, et st = écart-type estimé de la tare. 
+Même avec l'utilisation d'une trieuse, le contrôle mis en œuvre doit rester un contrôle de fabrication nécessitant la vérification, par un opérateur, pendant le processus de remplissage, de la conformité de la partie du lot déjà fabriqué, afin de pouvoir engager les réglages nécessaires le cas échéant sur l'instrument de dosage, au bon moment. Les lots déjà conditionnés et triés, dont la moyenne indiquée par la trieuse est inférieure à la quantité nominale ne peuvent être commercialisés en l'état et doivent faire l'objet d'une mise en conformité. En cas de contrôle avec tare individuelle dû à la variabilité de la tare et emploi d'une trieuse, un double système de pesage doit permettre de peser l'emballage vide puis l'emballage plein et de déduire la masse individuelle par différence. 
+Le traitement et la destination des écarts de tri doivent faire l'objet de procédures et d'enregistrements. La réincorporation des préemballages défectueux écartés par la trieuse, dans le lot de conditionnement (en fin ou en cours de fabrication), ne peut être envisagée que si cette action n'obère pas la garantie de conformité de chaque fraction horaire de production. Pour les lots de préemballages sans le signe « e », les superdéfectueux, compte tenu de la valeur importante du manquant, ne devraient pas être réincorporés dans le lot trié. 
+En cas d'utilisation du signe «<e », la vérification, en plus, sur chaque fraction horaire de fabrication, de la conformité aux critères de la moyenne et des défectueux ainsi que l'évolution à la hausse ou à la baisse par rapport aux moyennes horaires précédentes, due à une cause assignable, permet de mieux garantir une production homogène pendant toute la période de conditionnement. 
+B. Contrôle par échantillonnage 
+1. Sans utilisation du signe « e » 
+Dans le cas d'un contrôle par échantillonnage, sans utilisation du signe « e», le couple effectif/fréquence doit être évalué par l'emplisseur en fonction de la fréquence de déréglage. En l'absence de déréglages fréquents, il convient de privilégier l'effectif de l'échantillon (par exemple 7 à 10 unités). Une fréquence d'un échantillon au moins par heure de fabrication, doit être envisagée (guide Welmec 6.4). Contrairement au contrôle réalisé par le service officiel de contrôle, qui minimise l'erreur a du test statistique (risque de conclure à tort à la non-conformité du lot), l'emplisseur ou l'importateur doit minimiser le risque ẞ (risque de conclure à tort à la conformité du lot). A ce titre la moyenne de chaque échantillon doit être supérieure au seuil de centrage augmentée de l'erreur statistique. Le seuil de confiance ne devrait pas être en dessous de 90 %. 
+x≥m, + gs 
+x: moyenne d'échantillon, s: l'écart-type estimé de l'échantillon, g = t (1-0) / √ n avec t (1-0) au seuil de 90 %, n: effectif de l'échantillon, m, seuil de centrage 
+Les valeurs de t (1-0) au seuil de 90% sont données en annexe 3. 
+Il est possible de remplacer ce contrôle, par un test utilisant les mêmes bases mais cumulant les différents échantillons au cours du temps ce qui permet de diminuer progressivement la valeur de « g ». Ce test permet d'avoir une information sur la conformité de la partie de lot déjà fabriquée. Pour vérifier l'absence de déréglage ponctuel, il convient dans ce cas de comparer également x à m, pour chaque échantillon. 
+13/26 
+DGCCRF 
+et 
+= 
+x>m, +g.s 
+x≥m, 
+= 
+x moyenne des moyennes d'échantillon déjà prélevé, s : l'écart-type estimé 
+moyen, 
+g= t (1-a) / √(En) au seuil de 90 %, avec (En) l'effectif total cumulé de tous les échantillons déjà prélevés 
+Même en l'absence du signe « e», il est tout à fait possible d'utiliser les cartes de contrôles décrites ci- après qui permettent de mettre en œuvre un contrôle plus fin. 
+2. Avec utilisation du signe « e» 
+Dans le cadre de l'utilisation du signe «e», des cartes de contrôle aux mesures doivent être mises en place conformément aux documents techniques de référence, exemple la norme NF X 06-031-1 ou la norme ISO 7870-2. Deux types de carte doivent être conçus : une carte de contrôle de la moyenne et une carte de contrôle de la dispersion (carte de contrôle de l'écart-type ou carte de contrôle de l'étendue, néanmoins en raison de sa meilleure précision, la carte de contrôle de l'écart-type est préférée à celle de l'étendue dont l'usage ne se justifie qu'en l'absence de moyens de calculs et d'acquisition ; la carte de contrôle de l'étendue ne doit jamais être utilisée avec des échantillons d'effectif supérieur à 10). 
+Des limites de contrôle et de surveillance doivent être matérialisées, leur dépassement rend très probable un déréglage du processus de conditionnement nécessitant une action corrective. Outre le dépassement de ces limites, le constat de séries de points improbables permet également d'identifier des déréglages (cf. normes NF X 06-031-1 ou ISO 8258). Conformément à la norme NFX-06-031-1, l'utilisation des limites de surveillance reste optionnelle notamment lorsque la dispersion du processus est très faible. 
+La quantité cible (QC) est déterminée sur la base du seuil de centrage (ms) visée au point V et d'une valeur (k) liée à l'aléa statistique de l'échantillonnage afin de déceler, suffisamment tôt, suite aux échantillons successifs, un déréglage aboutissant à fabriquer un lot non conforme: 
+QC = ms + k 
+Le calcul de la valeur de k est détaillé en annexe 4. 
+Pour la carte de contrôle de l'écart-type, les limites sont calculées à partir de l'écart-type du procédé et de coefficients précisés notamment dans la norme NF X.06.031-1. Pour la carte de contrôle de la moyenne, les limites sont calculées à partir de l'écart-type du processus, de l'effectif (n) et de la quantité cible (QC). 
+Carte de contrôle de la moyenne 
+Limite de contrôle QC +/- 3oo / √ n 
+Limite de surveillance: QC +/- 200 / √ n 
+La valeur de QN-E (seuil défectueux) appelée souvent TU1, ne doit en aucun cas servir de limite pour la carte de la moyenne, ni même être mentionnée car elle réduit inutilement l'échelle des ordonnées de la carte; par ailleurs le comptage des défectueux sur chaque échantillon n'a pas d'intérêt le taux de défectueux fabriqué est en relation avec la valeur de l'écart-type qui est suivi et ce taux peut être calculé facilement sous réserve d'une distribution assimilable à une loi normale des valeurs de masses/volumes des préemballages [détermination du taux de défectueux; calcul de la valeur U: U = (k + E)/ σo. ou k est le surdosage par rapport à QN, E l'erreur maximale tolérée et oo l'écart-type de fabrication; puis recherche de la probabilité correspondante à la valeur U calculée, dans la table de la loi normale centrée réduite]. 
+Les cartes de contrôle de la moyenne et de l'écart-type doivent permettre de déceler des déréglages aboutissant à fabriquer des lots avec plus de 2 % de défectueux ou un sous dosage par rapport à la QN. 
+La période opérationnelle est le nombre d'échantillonnages qui permet de déceler un déréglage donné. La période opérationnelle moyenne est le nombre moyen d'échantillonnages successifs qui permet de déceler un déréglage donné. On part du principe qu'il faut pouvoir déceler un déréglage pouvant conduire à fabriquer des lots métrologiquement non conformes, dans un délai ne dépassant pas 1 heure de fabrication. 
+L'effectif des échantillons et la fréquence d'échantillonnage doivent être optimisés pour garantir l'efficacité de la carte. La période d'échantillonnage devrait être inférieure ou égale à l'heure pour 
+DGCCRF 
+14/26 
+permettre de garantir la conformité de chaque fraction horaire de fabrication. Plus l'effectif est grand, plus l'efficacité de la carte augmente: en pratique un effectif de 7 à 10 unités est un bon compromis. L'effectif peut aussi être calé sur le pas machine en cas de système multibecs (pas machine: nombre de becs doseurs unitaires constituant la machine d'emplissage). Si le nombre de becs est trop important, vérification au démarrage (ou de façon régulière) de chaque bec puis échantillon constitué d'une fraction du nombre de becs en changeant à chaque échantillonnage (exemple : emplisseuse à 48 becs, échantillon constitué de 12 unités, 1o échantillon: becs 1 à 12, second: becs 13 à 24, etc). 
+Il est fortement recommandé de calculer et d'enregistrer la moyenne des moyennes d'échantillon après chaque échantillonnage et l'écart-type moyen, ces paramètres donnant une information 
+sur les caractéristiques de la partie du lot déjà fabriquée. A la fin de la fabrication du lot, le test suivant permet de vérifier que la moyenne du lot est supérieure ou égale à QN en minimisant l'erreur ẞ (risque client). 
+= 
+x≥m, + g.s 
+= 
+x moyenne des moyennes d'échantillon, s l'écart-type estimé moyen, g = t (1-a) / √ (En) au seuil de 90 %, avec (En) l'effectif total cumulé de tous les 
+échantillons 
+Les valeurs de t (1-0) au seuil de 90 % sont données en annexe 3. 
+VIII. Contrôles à mettre en place par les importateurs L'importateur de préemballages provenant d'un pays tiers a la responsabilité d'assurer que ces derniers répondent aux prescriptions de la directive n° 76-211. A ce titre il a les mêmes obligations que l'emplisseur national et doit procéder au contrôle des préemballages à l'aide d'un instrument de mesure légal. Ce contrôle peut être fait à 100 % ou par échantillonnage. En cas de contrôle par échantillonnage, un contrôle type réception utilisant pour le contrôle de la moyenne, la formule développée au point VII-B- 1 doit être utilisée. L'effectif de l'échantillon n'est pas réglementé mais il est recommandé un échantillon d'un effectif de 50 unités en cas de contrôle non destructif et 20 en cas de contrôle destructif. Pour le contrôle des défectueux, en l'absence d'une connaissance de l'écart-type du procédé et de la normalité de la distribution, il est possible d'utiliser les plans aux attributs du contrôle officiel cités dans l'arrêté du 20/10/1978 lorsque le lot ne dépasse pas 10 000 unités et au-delà les plans proposés dans la norme NF ISO 2859-1 avec un NQA de 2,5 %. 
+Dans la pratique, il s'avère difficile de pouvoir contrôler chaque lot importé, il est donc admis un contrôle par sondage en ciblant les références à risque ; l'analyse de risque doit pouvoir être justifiée. La directive précise cependant que l'importateur au lieu d'effectuer le mesurage ou le contrôle, peut fournir la preuve qu'il s'est entouré de toutes les garanties lui permettant d'assumer sa responsabilité. Il peut donc fournir les autocontrôles du fabricant étranger sous réserve qu'ils soient compréhensibles par le service de contrôle ou traduits et qu'ils respectent les dispositions du contrôle de fabrication décrites au chapitre VII. L'introducteur de lots de préemballages sans le signe «e» ne bénéficie pas de la présomption de conformité au regard des spécifications de la directive 76-211. Dès lors, les dispositions ci-dessus inhérentes à l'importateur lui sont applicables. 
+L'importateur peut apposer ou faire apposer le signe « e» sous sa responsabilité, sur les préemballages du lot; en cas de fourniture des autocontrôles du conditionneur du pays tiers, ces derniers doivent respecter les dispositions qui s'appliquent pour le contrôle de fabrication de l'emplisseur national. En cas de signe «<e », il est recommandé de cumuler la fourniture des autocontrôles du fabricant étranger avec la réalisation de contrôles de réception par sondage, afin de pouvoir apporter toutes les garanties requises. 
+IX. Mise en conformité ou destination des lots non conformes 
+La mise en conformité des lots déclarés non-conformes et la destination des lots définitivement non conformes doivent faire l'objet de procédures et d'enregistrements. 
+A. Mise en conformité des lots non-conformes 
+La mise en conformité du lot non conforme peut être réalisée de différentes façons: 
+DGCCRF 
+15/26 
+- En cas de non-conformité pour le critère de la moyenne, mélange à un lot surdosé de telle sorte que la moyenne des deux lots soit supérieure ou égale à la quantité nominale; en cas de non-conformité pour le critère des défectueux, mélange à un lot présentant un taux de défectueux suffisamment faible pour que le lot mélangé ne comporte pas plus de 2 % de défectueux. Le mélange doit être suffisamment intime pour aboutir à une répartition homogène, et être réalisé au moins au niveau des cartons contenant les préemballages. 
+Ouverture de chaque préemballage en vue de délivrer un complément de produit, afin que le critère de la moyenne et/ou celui des défectueux soit conforme, sous réserve du respect des bonnes pratiques de fabrication. 
+- 
+Tri manuel ou automatique soit pour éliminer les défectueux en surnombre par rapport au seuil de 2% en cas de non-conformité pour le critère des défectueux, ou éliminer les préemballages aux masses les plus faibles afin de faire remonter la valeur moyenne de la quantité effective, au niveau de la quantité nominale, en cas de non-conformité pour le critère de la moyenne. 
+B. Destination des lots définitivement non-conformes 
+Les lots définitivement non conformes ne peuvent être commercialisés en l'état ; ils ne peuvent être mis en vente qu'à la condition de garantir à l'acheteur qu'il ne subit aucun préjudice. 
+Outre la destruction du lot par la vidange du contenu des préemballages en vue d'un éventuel reconditionnement ultérieur, il est possible : 
+de vendre le lot à un acheteur dûment informé de la non-conformité métrologique, pour sa consommation propre. La preuve de la bonne information de l'acheteur quant aux caractéristiques du lot, doit pouvoir être rapportée par le vendeur. 
+d'apposer de manière apparente sur chaque préemballage le véritable contenu effectif moyen, sous réserve que le produit ne fasse pas l'objet d'un texte normalisant la gamme de volumes autorisés. 
+De vendre ou délivrer à titre gratuit le lot à un organisme caritatif dans le cadre de l'aide alimentaire, en informant l'organisme des caractéristiques métrologique du lot afin que ce dernier puisse en informer les bénéficiaires de l'aide lors de la vente ou distribution à titre gratuit, du produit. 
+16/26 
+DGCCRF 
+IPFNA 
+IPFA 
+N 
+ON 
+E 
+PO 
+POM 
+10 
+5 
+X 
+= 
+X 
+S 
+Glossaire des symboles et sigles 
+Instrument de pesage à fonctionnement non automatique (exemple balance) Instrument de pesage à fonctionnement automatique (exemple trieuse) 
+Effectif du lot de préemballages 
+Effectif de l'échantillon de préemballages 
+Quantité Nominale: masse nette ou volume net de produit que le préemballage est censé contenir Erreur en moins maximale tolérée fixée à l'article 4 du décret du 31/01/1978 
+Période opérationnelle limite: nombre d'échantillonnages limite au terme duquel il convient de déceler un déréglage donné 
+Période Opérationnelle Moyenne : nombre d'échantillonnages au terme duquel la probabilité de déceler un déréglage donné est de 50 % 
+moyenne d'échantillon; c'est la moyenne arithmétique des contenus x; des n préemballages mesurés sur l'échantillon 
+x 
+= 
+i=n 
+Σχ 
+i=n 
+n 
+Moyenne de moyennes d'échantillons 
+Ecart-type estimé ou estimateur d'écart-type; c'est la racine carrée du quotient par n − 1 de la somme des carrés des écarts entre les contenus x; des n préemballages mesurés dans l'échantillon et la moyenne X desdits contenus, soit : 
+S = 
+i=n 
+(x1 - x)2 
+n-1 
+Ecart-type estimé moyen pour k valeurs : 
+2 
+2 
+S= 
++ $22 + k 
++ Sk 
+St 
+e (apposé sur les instruments de mesure) 
+e (apposé sur l'étiquetage des préemballages) 
+Ро 
+Po 
+ms 
+QC 
+σα 
+g 
+mi, m2 et σ1 
+k1,k2 et k3 
+Ecart-type estimé ou estimateur d'écart-type de la tare (différents éléments d'emballage ou objets constituant le contenant) 
+Echelon de vérification de l'instrument (IPFNA ou IPFA) 
+NB Pour une doseuse pondérale, en usage réglementé, l'échelon de vérification est noté « d » 
+Signe par lequel l'emplisseur ou l'importateur certifie sous sa responsabilité, qu'il garantit la conformité des préemballages du lot aux dispositions réglementaires métrologiques 
+Masse volumique conventionnelle 
+Masse volumique vraie 
+Seuil de centrage: valeur de centrage du processus de remplissage de telle sorte que le pourcentage de défectueux fabriqué n'excède pas 2 %. Cette valeur dépend de l'écart-type du procédé. 
+Quantité cible : valeur cible effective du processus de conditionnement basée sur le seuil de centrage et, en cas de contrôle par échantillonnage, d'une valeur de surdosage k permettant de déceler un déréglage défini avec une probabilité donnée. 
+Ecart-type du processus de remplissage correctement réglé 
+бо 
+= 
+i=n 
+=1 
+(x − x )2 
+n 
+Coefficient statistique utilisé dans certaines formules; égal à t(1-0)/√n 
+où t (1-0) est la valeur de la table de Student correspondant au seuil de confiance choisi Valeurs de la cible de fabrication déréglées ou de l'écart-type de fabrication déréglé qu'il convient de pouvoir déceler de façon probable au terme de la période opérationnelle limite Surdosage par rapport au seuil de centrage, correspondant respectivement à m1, m2 et o1, tenant compte de l'aléa statistique d'échantillonnage et permettant d'ajuster l'efficacité de la carte 
+DGCCRF 
+17/26 
+Annexe n° 1 
+Liste des méthodes d'analyse pouvant être utilisées pour déterminer la masse volumique et formule de conversion pour déterminer la masse volumique conventionnelle 
+Equipement pour mesurer la Masse volumique vraie : 
+densité 
+Aréomètre Pycnomètre 
+Densitomètre 
+Méthode par pesée de la masse du produit et du même volume d'eau 
+po en g/cm3 
+Lecture directe 
+Po= (0,99985 m/Vo) + 0,0012 
+Vo volume du liquide en cm3 mesuré dans l'appareil 
+my: masse du produit dans l'instrument de mesure Lecture directe 
+| po= (0,99985 mv/Vo) + 0,0012 avec mo masse du produit en g Vo volume du liquide en cm3 mesuré dans l'appareil 
+my: masse du produit dans l'instrument de mesure 
+Volume calculé de liquide dans le préemballage: 
+V en cm3 m en g 
+0,99985 m 
+V = 
+Po - 0,0012 
+avec m masse du produit en g 
+V volume du liquide 
+po masse volumique vraie 
+Relation entre masse volumique conventionnelle pc et la masse volumique vraie po 
+Pe= 
+Po-0,0012 0,99985 
+(masse volumique exprimée en g/cm3) 
+DGCCRF 
+18/26 
+Annexe 2 
+1 
+2 
+3 
+st 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+Check-list des points de maîtrise du processus de conditionnement 
+Formation, organisation et réglementation 
+✓ Mise en place de formations pour l'encadrement et les opérateurs des chaines de remplissage concernant les aspects suivants: métrologie légale, réglementation inhérente aux contrôles métrologiques, éléments de maîtrise statistique des procédés dont le fonctionnement des cartes de contrôle, modalités de fonctionnement des outils de remplissage. 
+✓ Connaissance des dispositions réglementaires visées au point 1, par l'encadrement. ✓Classement et mise à jour de la documentation réglementaire et normative. 
+✔ Existence de procédures documentées et enregistrements concernant la surveillance des caractéristiques métrologiques des lots conditionnés, les actions correctives en cas de non conformité, les actions de validation, de vérification et de revue. 
+✔ Identification claire des responsabilités et connaissance des procédures par les 
+opérateurs intervenant dans le processus de remplissage. 
+✔Prise en compte des réclamations des acheteurs et des observations des services 
+officiels de contrôle en matière de quantité des produits préemballés. 
+Analyse du processus de conditionnement 
+✓ Description et analyse des procédés de conditionnement pour déterminer les 
+paramètres qui influent sur le remplissage. 
+✓ Travaux d'optimisation du procédé avec élimination des causes assignables de 
+variation - Connaissance de l'écart-type machine et du processus. 
+✓ Vérification de la capacité des machines de conditionnement à fabriquer des lots réglementairement conformes au regard de l'écart-type et de la quantité cible d'emplissage. 
+· 
+Équipement de mesurage et d'essai 
+✔ Inventaire et description des instruments de mesurage et de contrôle. 
+✓ Modalités d'entretien et de suivi courant des performances du matériel utilisé pour 
+l'emplissage. 
+✓ Corrélation entre quantité effectivement délivrée par le matériel d'emplissage et 
+système de réglage de la quantité, de ce matériel 
+✓ Modalités d'entretien et de suivi courant des performances des instruments de 
+pesage légaux utilisés pour le contrôle. 
+✓ Conformité réglementaire des instruments de mesurage légaux au regard des 
+conditions d'utilisation. 
+✓ Entretien et vérification des masses étalons. 
+Procédures de surveillance 
+✔ Existence de plusieurs niveaux de contrôle de la quantité délivrée pour optimiser 
+l'efficacité des procédures 
+✔ Analyse de la variabilité de la tare pour déterminer si le contrôle est à réaliser avec 
+tare moyenne ou tare individuelle 
+✓ Connaissance et maîtrise de la masse moyenne de la tare pour chaque lot en cas de 
+4 L'existence de plusieurs niveaux de contrôle de la quantité délivrée n'est pas obligatoire mais tend à augmenter fortement la détection des anomalies de remplissage et donc la maîtrise du processus. 
+DGCCRF 
+19/26 
+Annexe 2 
+19 
+20 
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+دیا 
+32 
+contrôle non destructif. 
+✓ Pour les préemballages à QN en volume et contrôle en masse, modalités de détermination de la masse volumique, précision, variabilité, adéquation entre la valeur utilisée pour les calculs et celle du lot. 
+✔ Pour les préemballages à QN en volume et contrôle en volume, modalités de vérification de la température du liquide et modalités de correction pour déterminer le volume à 20 °C. 
+✓ En cas d'utilisation de cartes de contrôle (moyenne et écart-type), modalités de conception et calcul des paramètres de cette carte en conformité avec les normes NF X-06-031 ou ISO correspondantes, notamment en ce qui concerne la quantité cible de remplissage par rapport à QN, la fréquence et l'effectif de l'échantillon, de façon à optimiser la capacité à déceler des anomalies ayant une incidence sur la conformité métrologique des lots. 
+✓ 
+En cas d'utilisation d'une carte de contrôle, modalités d'utilisation de la carte garantissant le rejet des lots susceptibles d'être non conformes notamment mise en place de tests pour causes assignables. 
+En cas d'utilisation d'un contrôle à 100 % automatique par trieuse pondérale, modalités de contrôle et d'enregistrement en cours de fabrication, de la masse moyenne de la partie du lot déjà fabriqué, de l'écart-type du lot, du nombre de défectueux écartés, du taux de défectueux sur le lot; vérification de la capacité d'éjection. 
+✔ En cas d'utilisation d'un contrôle à 100 % automatique par trieuse pondérale, modalités de contrôle et d'enregistrement concernant le traitement et la destination des écarts de tri 
+✓ En cas de contrôle de réception, efficacité du contrôle garantissant le rejet des lots 
+non conformes 
+comparaison des moyennes d'échantillon à m, + g.s. En cas de surveillance à réception de façon ciblée sur les lots à risque, pertinence de l'analyse de risque. 
+✔ En cas de remplissage manuel avec IPFNA ou sans IPFNA, fiabilité des procédures 
+de contrôle garantissant la conformité des lots. 
+✓ Mise en place d'une procédure de secours lorsque la procédure de contrôle 
+principale ne fonctionne plus ou de façon dégradée 
+✔ Mise en place d'un journal de bord du processus, consignant toutes les opérations 
+ayant affecté la chaîne de conditionnement. 
+✓ Traçabilité et enregistrement des données relatives au remplissage et mesures 
+correctives, pendant deux ans en cas de signe "e". 
+✓ Application de procédures de remise en conformité des lots déclarés non conformes, de destination des lots définitivement non conformes et d'actions correctives sur le processus. 
+✓ Application de procédures de vérification et de revue périodique des processus de remplissage et des modalités de surveillance pour vérifier et améliorer leur efficacité. 
+✔ Conformité des contrôles métrologiques réalisés par les services d'inspection sur 
+des produits conditionnés ou importés par l'entreprise. 
+20/26 
+DGCCRF 
+Annexe 3 
+Effectif 
+Valeur de g au seuil de confiance de 90 % en 
+Valeur de g au risque alpha de 
+échantillon 
+fonction de l'effectif de l'échantillon avec 
+10 % [risque unilatéral] 
+50 
+0,184 
+g=t(-a)/Vn 
+55 
+0,175 
+60 
+0,167 
+Effectif échantillon 
+Valeur de g au risque alpha de 
+65 
+0,161 
+10 % [risque unilatéral] 
+70 
+0,155 
+2 
+2,176 
+75 
+0,149 
+3 
+1,089 
+80 
+0,144 
+4 
+0,819 
+85 
+0,140 
+5 
+0,686 
+90 
+0,136 
+6 
+0,603 
+95 
+0,132 
+7 
+0,544 
+100 
+0,129 
+8 
+0,500 
+105 
+0,126 
+9 
+0,466 
+110 
+0,123 
+10 
+0,437 
+115 
+0,120 
+11 
+0,414 
+120 
+0,118 
+12 
+0,394 
+125 
+0,115 
+13 
+0,376 
+130 
+0,113 
+14 
+0,361 
+135 
+0,111 
+15 
+0,347 
+140 
+0,109 
+16 
+0,335 
+145 
+0,107 
+17 
+0,324 
+150 
+0,105 
+18 
+0,314 
+155 
+0,103 
+19 
+0,305 
+160 
+0,102 
+20 
+0,297 
+165 
+0,100 
+21 
+0,289 
+170 
+0,099 
+22 
+0.282 
+175 
+0,097 
+23 
+0,275 
+180 
+0,096 
+24 
+0,269 
+185 
+0,095 
+25 
+0,264 
+190 
+0,093 
+26 
+0,258 
+195 
+0,092 
+27 
+0,253 
+200 
+0,091 
+28 
+0,248 
+205 
+0,090 
+29 
+0,244 
+210 
+0,089 
+30 
+0,239 
+215 
+0,088 
+31 
+0,235 
+220 
+0,087 
+32 
+0,231 
+225 
+0,086 
+33 
+0,228 
+230 
+0,085 
+34 
+0,224 
+235 
+0,084 
+35 
+0,221 
+240 
+0,083 
+36 
+0,218 
+245 
+0,082 
+37 
+0,215 
+250 
+0,081 
+38 
+0,212 
+255 
+0,080 
+39 
+0,209 
+260 
+0,080 
+40 
+0,206 
+265 
+0,079 
+41 
+0,204 
+270 
+0,078 
+42 
+0,201 
+275 
+0,077 
+43 
+0,199 
+280 
+0,077 
+44 
+0,196 
+285 
+0,076 
+45 
+0,194 
+290 
+0,075 
+46 
+0,192 
+295 
+0,075 
+47 
+0.190 
+300 
+0,074 
+48 
+0,188 
+49 
+0,186 
+21/26 
+DGCCRF 
+Annexe 4 
+Efficacité de la carte de contrôle et calcul de la quantité cible de 
+I. Principes 
+remplissage 
+Les paramètres qui influent sur l'efficacité de la carte de contrôle et sur lesquels l'emplisseur peut agir sont les suivants : 
+➤ L'effectif de l'échantillon: n 
+➤ L'écart-type de la distribution du processus bien réglé : oo 
+➤ La valeur de surdosage «k» de la quantité cible par rapport à la quantité nominale 
+(QC - QN) 
+➤ La fréquence d'échantillonnage 
+Pour tester l'efficacité de la carte de contrôle on compare la période opérationnelle moyenne (POM) à la période opérationnelle limite (PO1). On considère que la période opérationnelle limite correspond au nombre d'échantillonnages pendant une heure de fabrication et qu'un déréglage ayant pour conséquence la fabrication d'un lot métrologiquement non conforme, doit pouvoir être décelé au bout d'une heure de fabrication. 
+POM < PO1 efficacité correcte 
+POM > PO, efficacité insuffisante 
+(NB la valeur de la POM est arrondie à la valeur entière par défaut). 
+Deux types de déréglages ayant trois conséquences différentes sont à prendre en compte : 
+1) Carte de contrôle de la moyenne : Déréglage de la cible de fabrication aboutissant à un sous- 
+dosage (critère de la moyenne) 
+2) Carte de contrôle de la moyenne : Déréglage de la cible de fabrication aboutissant à la 
+fabrication d'une proportion trop importante de défectueux (critère des défectueux) 
+3) Carte de contrôle de l'écart-type: Déréglage de l'écart-type de fabrication aboutissant à la 
+fabrication d'une proportion trop importante de défectueux (critère des défectueux) 
+Les objectifs d'efficacité sont définis ci-après : 
+✔ Pour le point 1) pouvoir déceler un déréglage vers le bas de la quantité cible aboutissant à un 
+sous-dosage égal ou supérieur à 0,2 % de la quantité nominale avec un minimum fixé à 0,1 g Pour le point 2) pouvoir déceler un déréglage vers le bas de la quantité cible aboutissant à un taux de défectueux sur le lot >2% 
+Pour le point 3) pouvoir déceler une augmentation de l'écart-type de distribution aboutissant à un taux de défectueux sur le lot ≥2% 
+II. Calcul de la période opérationnelle moyenne (POM) dans chaque cas 
+Soit my ou m2 les valeurs de la cible de fabrication déréglée et σ la valeur de l'écart-type déréglé, qu'il convient de pouvoir déceler dans chaque cas. 
+Carte de contrôle de la moyenne ; critère de la moyenne 
+m1 = 0,998 QN et QN - m1 ≥ 0,1 g 
+Calculer d√n avec 8 = (m,+ k1 - m1) / σ0 
+m, seuil de centrage et k1 le surdosage 
+permettant d'ajuster l'efficacité 
+Recherche dans l'annexe de la norme NF X 06-031-1 la Période Opérationnelle Moyenne (POM) correspondant à la valeur 8√n 
+Carte de la moyenne; critère des défectueux 
+= 
+m2 QN-E + 2,05 σo 
+DGCCRF 
+22/26 
+Annexe 4 
+Calculer &√n avec 8 = (m,+ k2− m2) / σo 
+m, valeur seuil de centrage et k2 le surdosage permettant d'ajuster l'efficacité 
+Recherche dans l'annexe de la norme NF X 06-031-1 la Période Opérationnelle Moyenne (POM) correspondant à la valeur d√n 
+Carte de l'écart-type; critère des défectueux 
+σ1 = [m,+ k3− (QN – E)] / 2,05 
+Calculer 01 / 00 
+m, valeur seuil de centrage et k3 le surdosage permettant d'ajuster l'efficacité 
+Recherche dans l'annexe de la norme NF X 06-031-1, la Période Opérationnelle Moyenne (POM) correspondant à la valeur σ1/00 
+La valeur de k du point VII-B-2, correspond à la plus forte valeur entre k1, k2 et kз 
+III. Exemple chiffré 
+Données 
+Exemple fabrication de paquets de lessive de QN 1000 g (valeur de E: 15 g; art. 4 D. 31/01/78) Fabrication de lots de 30000 unités; apposition du signe «<e ». 
+Ecart-type initial du procédé : 06-7,05 g. 
+Détermination de la valeur seuil de centrage: E/2,057,3100 E/2,05 donc m, = QN 
+Echantillonnage : toutes les 15 mn; échantillon n = 5 unités 
+La valeur cible de fabrication a été fixée à 1000 g malgré un écart-type assez fort. Mise en place d'une carte de contrôle conforme à la norme NF X.06-031-1 
+Etude de l'efficacité des cartes avec les paramètres initiaux 
+Détermination de la période opérationnelle limite 
+PO1 = 4 
+(4 échantillonnages par heure) 
+❖ Carte de la moyenne - critère de contrôle de la moyenne 
+Détermination de mi : nouvelle valeur cible après déréglage qu'il convient de détecter au plus tard au bout d'une heure de fabrication ; 
+m1 = 0,998 QN et QN - m1 ≥ 0,1 g soit m1 = 998 g 
+8 = (1000 - 998) / 7,05 = 0,2836 
+8.vn = 0,63 
+POM correspondant≈ 107,8 et PO1 = 4: POM >> PO1 donc efficacité très insuffisante 
+→ Carte de la moyenne - critère de contrôle des défectueux 
+Détermination de m2 : nouvelle valeur cible après déréglage m2=QN-E + 2,05 σo soit m2 = 999,45 g 
+8 = (1000-999,45) / 7,05 = 0,0780 
+8. Vn = 0,17 
+POM correspondant≈ 328 et PO14: POM >> PO1 donc efficacité très insuffisante 
+→ Carte de l'écart-type - critère de contrôle des défectueux 
+Détermination de σ nouvel écart type après déréglage 
+DGCCRF 
+23/26 
+Annexe 4 
+σ1 = [m,+ k3-(QN – E)]/2,05 soit σ17,32 g 
+01/00 = 7,32/7,05 = 1,0383 
+POM correspondant >> 50 et PO1 = 4: POM >> PO donc efficacité très insuffisante 
+Amélioration de l'efficacité des cartes en modifiant les paramètres initiaux 
+Dans un premier temps on essaie d'optimiser l'écart-type de la doseuse volumétrique multibecs, en centrant tous les becs, en améliorant l'écart-type de chaque bec + autres actions sur le processus. 
+Nouvel écart-type du processus σ = 4,82 g 
+On augmente l'effectif de l'échantillon en le passant à 10 et on maintient la même fréquence d'échantillonnage 
+❖ Carte de la moyenne – critère de contrôle de la moyenne 
+On détermine la quantité cible minimale QC de façon à obtenir une efficacité correcte 
+Avec QC = 1001,7 g 
+Calcul avec les nouveaux paramètres : 
+8 = (1001,7 - 998) / 4,82 = 0,7676 8.√n = 2,43 
+POM correspondant≈ 3,6 et PO|= 4 donc efficacité correcte 
+k1 = QC - QN = 1,7 g 
+❖ Carte de l'écart-type-critère de contrôle des défectueux 
+On détermine la quantité cible minimale QC de façon à obtenir une efficacité correcte 
+m2 = QN-E + 2,05 oo soit m2 = 994,88 
+Avec QC 1000,0 g 
+Calcul avec les nouveaux paramètres : 
+8 = (1000 - 994,88) /4,82 = 1,0622 
+8.vn = 3,35 
+POM correspondant≈ 1,6 et PO1 = 4 : donc efficacité correcte 
+k2 = QC - QN = 0 g 
+❖ Carte de l'écart-type- critère de contrôle des défectueux 
+On détermine la quantité cible minimale QC de façon à obtenir une efficacité correcte 
+Avec QC = 1000,3 g 
+Calcul avec les nouveaux paramètres : 
+01 = [ms + k3-(QN – E)]/2,05 soit o1 = 7,46 g 
+01/007,46/4,82 = 1,54 
+POM correspondant≈ 3,5 et PO1 = 4 : donc efficacité correcte 
+k3 = QC - QN = 0,3 g 
+k est la valeur la plus grande entre k1, k2 et kз soit 1,7 g 
+Donc avec un écart-type σ = 4,82, un effectif d'échantillon de n = 10, une fréquence d'échantillon toutes les 15 mn et une quantité cible de 1001,7 g, (surdosage de 0,17 %) l'efficacité de la carte sera correcte c'est à dire qu'elle permettra en moyenne de déceler au bout d'une heure de fabrication un déréglage aboutissant à 2 % de défectueux ou un sous-dosage à 998 g 
+DGCCRF 
+24/26 
+Annexe 5 
+Valeurs de l'erreur en moins [E] fixée à l'article 4 du décret du 31/01/1978 
+Contenu nominale << QN » 
+en grammes ou millilitres 
+5 à 50 
+Erreurs en moins 
+En pourcentage de « QN »> 
+En grammes ou millilitres 
+9 
+50 à 100 
+100 à 200 
+4,5 
+200 à 300 
+300 à 500 
+500 à 1 000 
+1 000 à 10 000 
+10 000 à 15 000 
+Supérieur à 15 000 
+1 
+4,5 
+9 
+3 
+15 
+1,5 
+150 
+NB le signe « e», ne peut être apposé que sur l'étiquetage de préemballages dont la quantité nominale est inférieure ou égale à 101 ou 10 kg 
+25/26 
+DGCCRF 
+Annexe 6 
+0.085 
+0.013 
+0,646 
+e 
+0.183 
+0.263 
+0,025 
+0.183 
+6'0 
+Les dimensions de ce dessin sont exprimées en fonction de l'unité correspondant au diamètre du cercle qui circonscrit la lettre «<e ». 
+DGCCRF 
+DGCCRF 
+Direction générale de la 
+concurrence, de la consommation et de la répression des fraudes 
+Signature numérique 
+26/26
