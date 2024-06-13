@@ -7,6 +7,15 @@ from io import BytesIO
 
 # Fonction pour le test de normalité de Shapiro-Wilk
 def shapiro_test(data):
+    """
+    Réalise le test de normalité de Shapiro-Wilk sur les données fournies.
+
+    Args:
+        data (list): Une liste de valeurs numériques représentant les poids de tare ou les poids bruts.
+
+    Returns:
+        str: Une chaîne de caractères indiquant si la distribution est normale ou non, avec la valeur p.
+    """
     stat, p = stats.shapiro(data)
     alpha = 0.05  # Seuil de signification
     if p > alpha:
@@ -16,12 +25,27 @@ def shapiro_test(data):
 
 # Fonction pour calculer le POM à partir de l'annexe 3 du guide
 def calcul_pom(delta_sqrt_n):
+    """
+    Calcule le POM (Période Opérationnelle Moyenne) à partir de la valeur de δ√n en utilisant
+    une interpolation linéaire sur le tableau de l'Annexe 3 du guide DGCCRF.
+
+    Args:
+        delta_sqrt_n (float): La valeur de δ (déviation) multipliée par la racine carrée de n (effectif d'échantillon).
+
+    Returns:
+        int: La valeur du POM arrondie à l'entier le plus proche.
+    """
     # Tableau de l'Annexe 3 du guide DGCCRF (valeurs réelles)
     table_pom_x = [0.17, 0.28, 0.39, 0.50, 0.61, 0.72, 0.83, 0.94, 1.06, 1.17, 1.28, 1.39, 1.50, 1.61, 1.72, 1.83, 1.94, 2.05, 2.17, 2.28, 2.39, 2.50, 2.61, 2.72, 2.83, 2.94, 3.05, 3.16, 3.27, 3.38]
     table_pom_y = [328, 108, 66, 44, 30, 23, 18, 15, 12, 10, 9, 8, 7, 6, 6, 5, 5, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2]
 
     # Interpolation linéaire pour les valeurs manquantes
     f = interp1d(table_pom_x, table_pom_y, kind='linear', fill_value="extrapolate")
+
+    # S'assurer que delta_sqrt_n est un nombre, pas un tableau
+    if isinstance(delta_sqrt_n, np.ndarray):
+        delta_sqrt_n = delta_sqrt_n.item()
+
     pom = f(delta_sqrt_n)
     return round(pom)
 
