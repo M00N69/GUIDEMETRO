@@ -79,7 +79,7 @@ st.write(
 
 # Saisie des hypothèses de travail
 st.header("Hypothèses de travail")
-qn = st.number_input("Quantité Nominale (g):", value=1000, help="Poids nominal indiqué sur l'emballage.")
+qn = st.number_input("Quantité Nominale (g):", value=500, help="Poids nominal indiqué sur l'emballage.")
 e = st.number_input("Erreur maximale tolérée (g):", value=15, help="Valeur de E selon l'annexe 5 du guide DGCCRF.")
 surpoids_max = st.number_input("Surpoids maximum toléré (g):", value=2, help="Surpoids maximal acceptable pour chaque pack.")
 n = st.number_input("Effectif d'échantillon:", value=5, help="Nombre de packs à peser dans chaque échantillon.")
