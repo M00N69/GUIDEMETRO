@@ -40,7 +40,7 @@ with st.expander("Explication : Comment utiliser cette application"):
     st.markdown("""
     ### Validation d'échantillonnage pour le contrôle métrologique
     
-    Cette application Streamlit vous aide à valider votre stratégie d'échantillonnage pour le contrôle métrologique de vos préemballages, conformément au guide de bonnes pratiques de la DGCCRF (Direction générale de la concurrence, de la consommation et de la répression des fraudes).
+    Cette application vous aide à valider votre stratégie d'échantillonnage pour le contrôle métrologique de vos préemballages, conformément au guide de bonnes pratiques de la DGCCRF (Direction générale de la concurrence, de la consommation et de la répression des fraudes).
     
     #### Instructions pour la création du fichier Excel :
     - Créer un fichier Excel nommé `pesées.xlsx`.
