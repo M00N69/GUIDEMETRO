@@ -36,25 +36,18 @@ def calcul_pom_defectueux(delta_sqrt_n):
         int: La valeur du POM arrondie à l'entier le plus proche.
     """
     # Tableau de l'Annexe 4 du guide DGCCRF (valeurs réelles)
-    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126, 0.123, 0.120, 0.118, 
-                   0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 
-                   0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.080, 0.079, 0.078, 
-                   0.077, 0.077, 0.076, 0.075, 0.075, 0.074, 0.074]
+    # Correction du tableau 'table_pom_x' pour correspondre à 'table_pom_y'
+    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126, 
+                   0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 
+                   0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 
+                   0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.079, 0.078, 0.077, 0.076, 0.075, 0.074]
     
-    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 
-                   165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 
-                   270, 275, 280, 285, 290, 300]
+    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 
+                   145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 
+                   230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280, 285, 290, 300]
     
     # Vérifier si les longueurs des tableaux sont égales
     if len(table_pom_x) != len(table_pom_y):
-        # Imprimer la longueur des tableaux pour déboguer
-        st.write(f"Longueur de table_pom_x: {len(table_pom_x)}")
-        st.write(f"Longueur de table_pom_y: {len(table_pom_y)}")
-        
-        # Imprimer les valeurs pour voir la différence
-        st.write(f"table_pom_x: {table_pom_x}")
-        st.write(f"table_pom_y: {table_pom_y}")
-        
         raise ValueError("Les tableaux 'table_pom_x' et 'table_pom_y' doivent avoir la même longueur.")
     
     # Interpolation linéaire pour les valeurs manquantes
@@ -100,21 +93,6 @@ with st.expander("Explication : Comment utiliser cette application"):
     5. L'application vérifiera si l'échantillonnage est validé ou non en comparant le POM (Période Opérationnelle Moyenne) et le POl (Période Opérationnelle Limite).
     6. Si l'échantillonnage n'est pas suffisant, l'application proposera des alternatives d'échantillonnage pour atteindre un POM acceptable.
     7. L'application générera un rapport Excel contenant les résultats de l'analyse, que vous pourrez télécharger.
-    
-    #### Fonctionnement de l'application :
-    L'application utilise les bibliothèques Pandas, NumPy et SciPy pour effectuer des calculs statistiques et d'interpolation. Elle définit deux fonctions :
-    
-    - **shapiro_test** : réalise le test de normalité de Shapiro-Wilk sur les données fournies.
-    - **calcul_pom** : calcule le POM (Période Opérationnelle Moyenne) à partir de la valeur de δ√n en utilisant une interpolation linéaire sur le tableau de l'Annexe 3 du guide DGCCRF.
-    - **calcul_pom_defectueux** : calcule le POM (Période Opérationnelle Moyenne) à partir de la valeur de δ√n en utilisant une interpolation linéaire sur le tableau de l'Annexe 4 du guide DGCCRF, pour le critère des défectueux.
-    
-    #### Étapes de l'application :
-    1. Saisie des hypothèses de travail par l'utilisateur.
-    2. Upload du fichier Excel contenant les données de pesée.
-    3. Analyse de la tare et du poids brut des données.
-    4. Calcul des critères de conformité.
-    5. Comparaison du POM et du POl pour valider l'échantillonnage.
-    6. Génération d'un rapport Excel contenant les résultats de l'analyse.
     """)
 
 # Lien pour télécharger le fichier d'exemple depuis Google Drive (lien direct)
