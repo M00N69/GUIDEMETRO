@@ -36,21 +36,19 @@ def calcul_pom_defectueux(delta_sqrt_n):
         int: La valeur du POM arrondie à l'entier le plus proche.
     """
     # Tableau de l'Annexe 4 du guide DGCCRF (valeurs réelles)
-    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126, 
-                   0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 
-                   0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 
+    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126,
+                   0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100,
+                   0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086,
                    0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.079, 0.078, 0.077, 0.076, 0.075, 0.074]
-    
-    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 
-                   145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 
+
+    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140,
+                   145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225,
                    230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280, 285, 290, 300]
-    
-    # Vérification stricte des longueurs des tableaux
+
+    # Vérifier si les longueurs des tableaux sont égales
     if len(table_pom_x) != len(table_pom_y):
-        st.write(f"Longueur de table_pom_x: {len(table_pom_x)}")
-        st.write(f"Longueur de table_pom_y: {len(table_pom_y)}")
         raise ValueError("Les tableaux 'table_pom_x' et 'table_pom_y' doivent avoir la même longueur.")
-    
+
     # Interpolation linéaire pour les valeurs manquantes
     f = interp1d(table_pom_x, table_pom_y, kind='linear', fill_value="extrapolate")
 
@@ -70,9 +68,9 @@ st.title("Validation d'échantillonnage pour le contrôle métrologique")
 with st.expander("Explication : Comment utiliser cette application"):
     st.markdown("""
     ### Validation d'échantillonnage pour le contrôle métrologique
-    
+
     Cette application Streamlit vous aide à valider votre stratégie d'échantillonnage pour le contrôle métrologique de vos préemballages, conformément au guide de bonnes pratiques de la DGCCRF (Direction générale de la concurrence, de la consommation et de la répression des fraudes).
-    
+
     #### Instructions pour la création du fichier Excel :
     - Créer un fichier Excel nommé `pesées.xlsx`.
     - Ajouter une feuille nommée `Pesées`.
@@ -80,7 +78,7 @@ with st.expander("Explication : Comment utiliser cette application"):
     - Saisir les poids des emballages vides dans la colonne `Tare (g)`.
     - Saisir les poids bruts des packs remplis dans la colonne `Poids Brut (g)`.
     - Enregistrer le fichier Excel.
-    
+
     #### Utilisation de l'application :
     1. Lancer l'application Streamlit.
     2. Saisir les hypothèses de travail suivantes :
@@ -95,6 +93,9 @@ with st.expander("Explication : Comment utiliser cette application"):
     6. Si l'échantillonnage n'est pas suffisant, l'application proposera des alternatives d'échantillonnage pour atteindre un POM acceptable.
     7. L'application générera un rapport Excel contenant les résultats de l'analyse, que vous pourrez télécharger.
     """)
+
+# Lien pour télécharger le fichier d'exemple depuis Google Drive (lien direct)
+st.markdown("Téléchargez le fichier d'exemple ici : [pesées.xlsx](https://drive.google.com/uc?export=download&id=YOUR_FILE_ID)")
 
 # Hypothèses de travail
 st.header("Saisie des hypothèses de travail")
@@ -200,3 +201,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Veuillez télécharger un fichier Excel pour commencer l'analyse.")
+
