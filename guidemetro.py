@@ -24,6 +24,7 @@ def calcul_pom(delta_sqrt_n):
     return round(float(f(delta_sqrt_n)))
 
 # Fonction pour calculer le POM pour les défauts
+# Fonction pour calculer le POM pour les défauts
 def calcul_pom_defectueux(delta_sqrt_n):
     """
     Calcule le POM (Période Opérationnelle Moyenne) à partir de la valeur de δ√n en utilisant
@@ -36,19 +37,25 @@ def calcul_pom_defectueux(delta_sqrt_n):
         int: La valeur du POM arrondie à l'entier le plus proche.
     """
     # Tableau de l'Annexe 4 du guide DGCCRF (valeurs réelles)
-    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126,
-                   0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100,
-                   0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086,
-                   0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.079, 0.078, 0.077, 0.076, 0.075]  # Removed the last element
-
-    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140,
-                   145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225,
+    table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126, 
+                   0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 
+                   0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 
+                   0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.079, 0.078, 0.077, 0.076, 0.075, 0.074]
+    
+    table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 
+                   145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 
                    230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280, 285, 290, 300]
 
-    # Vérifier si les longueurs des tableaux sont égales
-    if len(table_pom_x) != len(table_pom_y):
+    # Vérification stricte des longueurs des tableaux avec un affichage des valeurs
+    len_x = len(table_pom_x)
+    len_y = len(table_pom_y)
+    
+    if len_x != len_y:
+        st.write(f"Erreur: Longueur de table_pom_x = {len_x}, Longueur de table_pom_y = {len_y}")
+        st.write(f"Valeurs de table_pom_x : {table_pom_x}")
+        st.write(f"Valeurs de table_pom_y : {table_pom_y}")
         raise ValueError("Les tableaux 'table_pom_x' et 'table_pom_y' doivent avoir la même longueur.")
-
+    
     # Interpolation linéaire pour les valeurs manquantes
     f = interp1d(table_pom_x, table_pom_y, kind='linear', fill_value="extrapolate")
 
@@ -60,6 +67,7 @@ def calcul_pom_defectueux(delta_sqrt_n):
     pom = float(f(delta_sqrt_n))
 
     return round(pom)
+
 
 # Interface Streamlit
 st.title("Validation d'échantillonnage pour le contrôle métrologique")
