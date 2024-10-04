@@ -10,7 +10,7 @@ table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.
                0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 
                0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 
                0.085, 0.084, 0.083, 0.082, 0.081, 0.080, 0.079, 0.078, 0.077, 0.076, 0.075, 0.074, 
-               0.073, 0.072]  # Ajout des deux dernières valeurs extrapolées pour égaliser la longueur
+               0.073, 0.072]
 
 table_pom_y = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 
                145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 
@@ -36,13 +36,12 @@ def calcul_pom(delta_sqrt_n):
 
 # Fonction pour calculer le POM pour les défauts
 def calcul_pom_defectueux(delta_sqrt_n):
-    # Vérification stricte des longueurs des tableaux
-    if len(table_pom_x) != len(table_pom_y):
-        st.write(f"Erreur: Longueur de table_pom_x = {len(table_pom_x)}, Longueur de table_pom_y = {len(table_pom_y)}")
-        st.write(f"Valeurs de table_pom_x : {table_pom_x}")
-        st.write(f"Valeurs de table_pom_y : {table_pom_y}")
-        raise ValueError("Les tableaux 'table_pom_x' et 'table_pom_y' doivent avoir la même longueur.")
-    
+    # Limiter delta_sqrt_n aux bornes de table_pom_x
+    if delta_sqrt_n < min(table_pom_x):
+        delta_sqrt_n = min(table_pom_x)
+    elif delta_sqrt_n > max(table_pom_x):
+        delta_sqrt_n = max(table_pom_x)
+
     # Interpolation linéaire pour les valeurs manquantes
     f = interp1d(table_pom_x, table_pom_y, kind='linear', fill_value="extrapolate")
 
@@ -146,28 +145,29 @@ if uploaded_file is not None:
 
         # Vérification des bornes de delta_sqrt_n pour éviter les erreurs d'extrapolation
         if delta_sqrt_n < min(table_pom_x) or delta_sqrt_n > max(table_pom_x):
-            st.error(f"delta_sqrt_n ({delta_sqrt_n}) est en dehors des limites des tableaux d'interpolation.")
+            st.warning(f"delta_sqrt_n ({delta_sqrt_n}) est en dehors des limites des tableaux d'interpolation.")
+        
+        # Limitation de delta_sqrt_n aux bornes pour éviter l'erreur
+        pom = calcul_pom_defectueux(delta_sqrt_n)
+        pol = frequence * 4  # 4 échantillons par heure max
+
+        st.subheader("Validation de l'échantillonnage")
+        st.write(f"Seuil de centrage (ms) : {ms:.2f} g")
+        st.write(f"Poids cible (QC) : {qc:.2f} g")
+        st.write(f"POM : {pom} échantillons")
+        st.write(f"POl : {pol} échantillons")
+
+        if pom <= pol:
+            st.success("L'échantillonnage est validé!")
         else:
-            pom = calcul_pom_defectueux(delta_sqrt_n)
-            pol = frequence * 4  # 4 échantillons par heure max
+            st.error("L'échantillonnage n'est pas suffisant. Augmentez l'effectif ou la fréquence.")
 
-            st.subheader("Validation de l'échantillonnage")
-            st.write(f"Seuil de centrage (ms) : {ms:.2f} g")
-            st.write(f"Poids cible (QC) : {qc:.2f} g")
-            st.write(f"POM : {pom} échantillons")
-            st.write(f"POl : {pol} échantillons")
-
-            if pom <= pol:
-                st.success("L'échantillonnage est validé!")
-            else:
-                st.error("L'échantillonnage n'est pas suffisant. Augmentez l'effectif ou la fréquence.")
-
-            # Propositions d'échantillonnages alternatifs
-            st.subheader("Propositions d'échantillonnages alternatifs")
-            for n_alt in [7, 10, 15]:
-                delta_sqrt_n_alt = delta * np.sqrt(n_alt)
-                pom_alt = calcul_pom_defectueux(delta_sqrt_n_alt)
-                st.write(f"Effectif (n) = {n_alt}, POM = {pom_alt} échantillons")
+        # Propositions d'échantillonnages alternatifs
+        st.subheader("Propositions d'échantillonnages alternatifs")
+        for n_alt in [7, 10, 15]:
+            delta_sqrt_n_alt = delta * np.sqrt(n_alt)
+            pom_alt = calcul_pom_defectueux(delta_sqrt_n_alt)
+            st.write(f"Effectif (n) = {n_alt}, POM = {pom_alt} échantillons")
 
     # Génération du rapport Excel
     st.subheader("Télécharger le rapport d'analyse")
@@ -206,5 +206,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Veuillez télécharger un fichier Excel pour commencer l'analyse.")
-
 
