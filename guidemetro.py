@@ -25,17 +25,6 @@ def calcul_pom(delta_sqrt_n):
 
 # Fonction pour calculer le POM pour les défauts
 def calcul_pom_defectueux(delta_sqrt_n):
-    """
-    Calcule le POM (Période Opérationnelle Moyenne) à partir de la valeur de δ√n en utilisant
-    une interpolation linéaire sur le tableau de l'Annexe 4 du guide DGCCRF.
-
-    Args:
-        delta_sqrt_n (float): La valeur de δ (déviation) multipliée par la racine carrée de n (effectif d'échantillon).
-
-    Returns:
-        int: La valeur du POM arrondie à l'entier le plus proche.
-    """
-    # Tableau de l'Annexe 4 du guide DGCCRF (valeurs réelles)
     table_pom_x = [0.184, 0.175, 0.167, 0.161, 0.155, 0.149, 0.144, 0.140, 0.136, 0.132, 0.129, 0.126, 
                    0.123, 0.120, 0.118, 0.115, 0.113, 0.111, 0.109, 0.107, 0.105, 0.103, 0.102, 0.100, 
                    0.099, 0.097, 0.096, 0.095, 0.093, 0.092, 0.091, 0.090, 0.089, 0.088, 0.087, 0.086, 
@@ -64,7 +53,6 @@ def calcul_pom_defectueux(delta_sqrt_n):
     pom = float(f(delta_sqrt_n))
 
     return round(pom)
-
 
 
 # Interface Streamlit
@@ -148,27 +136,37 @@ if uploaded_file is not None:
     # Comparaison POM vs POl
     m2 = qn - e + 2.05 * sigma_0
     delta = (qc - m2) / sigma_0
-    delta_sqrt_n = delta * np.sqrt(n)
-    pom = calcul_pom_defectueux(delta_sqrt_n)
-    pol = frequence * 4  # 4 échantillons par heure max
 
-    st.subheader("Validation de l'échantillonnage")
-    st.write(f"Seuil de centrage (ms) : {ms:.2f} g")
-    st.write(f"Poids cible (QC) : {qc:.2f} g")
-    st.write(f"POM : {pom} échantillons")
-    st.write(f"POl : {pol} échantillons")
-
-    if pom <= pol:
-        st.success("L'échantillonnage est validé!")
+    # Vérification si delta est positif
+    if delta < 0:
+        st.error(f"Le calcul de delta est négatif : {delta}. Cela signifie que le processus est déjà dérégulé.")
     else:
-        st.error("L'échantillonnage n'est pas suffisant. Augmentez l'effectif ou la fréquence.")
+        delta_sqrt_n = delta * np.sqrt(n)
 
-    # Propositions d'échantillonnages alternatifs
-    st.subheader("Propositions d'échantillonnages alternatifs")
-    for n_alt in [7, 10, 15]:
-        delta_sqrt_n_alt = delta * np.sqrt(n_alt)
-        pom_alt = calcul_pom_defectueux(delta_sqrt_n_alt)
-        st.write(f"Effectif (n) = {n_alt}, POM = {pom_alt} échantillons")
+        # Vérification des bornes de delta_sqrt_n pour éviter les erreurs d'extrapolation
+        if delta_sqrt_n < min(table_pom_x) or delta_sqrt_n > max(table_pom_x):
+            st.error(f"delta_sqrt_n ({delta_sqrt_n}) est en dehors des limites des tableaux d'interpolation.")
+        else:
+            pom = calcul_pom_defectueux(delta_sqrt_n)
+            pol = frequence * 4  # 4 échantillons par heure max
+
+            st.subheader("Validation de l'échantillonnage")
+            st.write(f"Seuil de centrage (ms) : {ms:.2f} g")
+            st.write(f"Poids cible (QC) : {qc:.2f} g")
+            st.write(f"POM : {pom} échantillons")
+            st.write(f"POl : {pol} échantillons")
+
+            if pom <= pol:
+                st.success("L'échantillonnage est validé!")
+            else:
+                st.error("L'échantillonnage n'est pas suffisant. Augmentez l'effectif ou la fréquence.")
+
+            # Propositions d'échantillonnages alternatifs
+            st.subheader("Propositions d'échantillonnages alternatifs")
+            for n_alt in [7, 10, 15]:
+                delta_sqrt_n_alt = delta * np.sqrt(n_alt)
+                pom_alt = calcul_pom_defectueux(delta_sqrt_n_alt)
+                st.write(f"Effectif (n) = {n_alt}, POM = {pom_alt} échantillons")
 
     # Génération du rapport Excel
     st.subheader("Télécharger le rapport d'analyse")
