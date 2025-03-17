@@ -1224,7 +1224,7 @@ with tabs[3]:  # Onglet Téléchargements
     contient toutes les informations réglementaires et techniques nécessaires pour effectuer un contrôle
     métrologique conforme à la législation française et européenne.
     
-    [Consulter le guide sur le site de la DGCCRF](https://www.economie.gouv.fr/dgccrf)
+    [Consulter le guide sur le site de la DGCCRF](https://www.economie.gouv.fr/files/files/directions_services/dgccrf/boccrf/2014/14_06/guide_autocontrole_metrologique.pdf)
     """)
     
     # Fiches techniques
