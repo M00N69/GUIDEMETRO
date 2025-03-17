@@ -243,12 +243,19 @@ with tabs[0]:  # Onglet Analyse
                 st.success("Données de test générées avec succès!")
     with col3:
         st.markdown("**Besoin d'un modèle?**")
+        # Création du modèle directement ici
+        excel_file = creer_fichier_excel_modele()
+        st.download_button(
+            label="📥 Télécharger un modèle",
+            data=excel_file,
+            file_name="modele_pesees.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            help="Téléchargez ce fichier Excel vierge et remplissez-le avec vos données"
+        )
         st.markdown("""
-        <a href="#" onclick="document.getElementById('tabs-4').click();" style="text-decoration:none;">
-            <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; text-align:center; margin-top:10px;">
-                📥 Télécharger un modèle<br>Excel vierge
-            </div>
-        </a>
+        <div style="font-size:0.8em; color: #666; margin-top:5px;">
+        Un modèle complet est disponible dans l'onglet "Téléchargements"
+        </div>
         """, unsafe_allow_html=True)
 
     # Traitement lorsqu'un fichier est téléchargé
