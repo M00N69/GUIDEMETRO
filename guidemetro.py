@@ -246,7 +246,7 @@ with tabs[0]:  # Onglet Analyse
         st.markdown("""
         <a href="#" onclick="document.getElementById('tabs-4').click();" style="text-decoration:none;">
             <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; text-align:center; margin-top:10px;">
-                📥 Télécharger un modèle<br>Excel vierge
+                📥  Voir onglet téléchargement pour <br>un modèle Excel vierge
             </div>
         </a>
         """, unsafe_allow_html=True)
