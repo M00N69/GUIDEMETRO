@@ -190,6 +190,74 @@ def generer_donnees_test(qn, sigma, tare_moyenne, tare_sigma, n_samples=50):
     
     return df
 
+# Fonction pour créer un fichier Excel modèle
+def creer_fichier_excel_modele():
+    """
+    Crée un fichier Excel modèle avec les colonnes nécessaires pour l'analyse
+    et quelques exemples de données.
+    """
+    output = BytesIO()
+    workbook = xlsxwriter.Workbook(output)
+    
+    # Format pour les en-têtes
+    header_format = workbook.add_format({
+        'bold': True,
+        'bg_color': '#4472C4',
+        'font_color': 'white',
+        'border': 1,
+        'align': 'center'
+    })
+    
+    # Format pour les cellules
+    cell_format = workbook.add_format({
+        'border': 1
+    })
+    
+    # Format pour les instructions
+    instruction_format = workbook.add_format({
+        'italic': True,
+        'font_color': '#666666'
+    })
+    
+    # Créer la feuille de pesées
+    worksheet = workbook.add_worksheet("Pesées")
+    
+    # Définir la largeur des colonnes
+    worksheet.set_column('A:B', 15)
+    worksheet.set_column('C:C', 30)
+    
+    # Ajouter les en-têtes
+    worksheet.write('A1', 'Tare (g)', header_format)
+    worksheet.write('B1', 'Poids Brut (g)', header_format)
+    worksheet.write('C1', 'Notes (optionnel)', header_format)
+    
+    # Ajouter des exemples de données (5 lignes)
+    exemple_tares = [15.2, 15.3, 15.1, 15.4, 15.2]
+    exemple_bruts = [515.6, 516.2, 514.8, 515.9, 516.3]
+    
+    for i, (tare, brut) in enumerate(zip(exemple_tares, exemple_bruts), start=2):
+        worksheet.write(f'A{i}', tare, cell_format)
+        worksheet.write(f'B{i}', brut, cell_format)
+        worksheet.write(f'C{i}', "", cell_format)
+    
+    # Ajouter des instructions
+    worksheet.merge_range('A8:C8', 'Instructions d\'utilisation:', instruction_format)
+    instructions = [
+        "1. Saisissez les poids des emballages vides dans la colonne 'Tare (g)'.",
+        "2. Saisissez les poids bruts des packs remplis dans la colonne 'Poids Brut (g)'.",
+        "3. La colonne 'Notes' est optionnelle et peut être utilisée pour des commentaires.",
+        "4. Vous pouvez supprimer les exemples et ajouter autant de lignes que nécessaire.",
+        "5. Assurez-vous de conserver le nom de la feuille 'Pesées' et les en-têtes des colonnes."
+    ]
+    
+    for i, instruction in enumerate(instructions, start=9):
+        worksheet.merge_range(f'A{i}:C{i}', instruction, instruction_format)
+    
+    # Fermer le workbook
+    workbook.close()
+    
+    return output.getvalue()
+
 # ----- INTERFACE UTILISATEUR -----
 
 # En-tête
@@ -511,7 +579,7 @@ with tabs[0]:  # Onglet Analyse
                             unsafe_allow_html=True
                         )
             
-            with col2:
+                        with col2:
                 if delta >= 0:
                     # Propositions d'alternatives
                     st.markdown("#### Alternatives d'échantillonnage")
@@ -1076,76 +1144,6 @@ with tabs[2]:  # Onglet Documentation
            - Utilisez un effectif d'échantillon plus grand mais une fréquence plus faible
         """)
 
-# ----- FONCTIONS DE TÉLÉCHARGEMENT -----
-
-# Fonction pour créer un fichier Excel modèle
-def creer_fichier_excel_modele():
-    """
-    Crée un fichier Excel modèle avec les colonnes nécessaires pour l'analyse
-    et quelques exemples de données.
-    """
-    output = BytesIO()
-    workbook = xlsxwriter.Workbook(output)
-    
-    # Format pour les en-têtes
-    header_format = workbook.add_format({
-        'bold': True,
-        'bg_color': '#4472C4',
-        'font_color': 'white',
-        'border': 1,
-        'align': 'center'
-    })
-    
-    # Format pour les cellules
-    cell_format = workbook.add_format({
-        'border': 1
-    })
-    
-    # Format pour les instructions
-    instruction_format = workbook.add_format({
-        'italic': True,
-        'font_color': '#666666'
-    })
-    
-    # Créer la feuille de pesées
-    worksheet = workbook.add_worksheet("Pesées")
-    
-    # Définir la largeur des colonnes
-    worksheet.set_column('A:B', 15)
-    worksheet.set_column('C:C', 30)
-    
-    # Ajouter les en-têtes
-    worksheet.write('A1', 'Tare (g)', header_format)
-    worksheet.write('B1', 'Poids Brut (g)', header_format)
-    worksheet.write('C1', 'Notes (optionnel)', header_format)
-    
-    # Ajouter des exemples de données (5 lignes)
-    exemple_tares = [15.2, 15.3, 15.1, 15.4, 15.2]
-    exemple_bruts = [515.6, 516.2, 514.8, 515.9, 516.3]
-    
-    for i, (tare, brut) in enumerate(zip(exemple_tares, exemple_bruts), start=2):
-        worksheet.write(f'A{i}', tare, cell_format)
-        worksheet.write(f'B{i}', brut, cell_format)
-        worksheet.write(f'C{i}', "", cell_format)
-    
-    # Ajouter des instructions
-    worksheet.merge_range('A8:C8', 'Instructions d\'utilisation:', instruction_format)
-    instructions = [
-        "1. Saisissez les poids des emballages vides dans la colonne 'Tare (g)'.",
-        "2. Saisissez les poids bruts des packs remplis dans la colonne 'Poids Brut (g)'.",
-        "3. La colonne 'Notes' est optionnelle et peut être utilisée pour des commentaires.",
-        "4. Vous pouvez supprimer les exemples et ajouter autant de lignes que nécessaire.",
-        "5. Assurez-vous de conserver le nom de la feuille 'Pesées' et les en-têtes des colonnes."
-    ]
-    
-    for i, instruction in enumerate(instructions, start=9):
-        worksheet.merge_range(f'A{i}:C{i}', instruction, instruction_format)
-    
-    # Fermer le workbook
-    workbook.close()
-    
-    return output.getvalue()
-
 with tabs[3]:  # Onglet Téléchargements
     st.subheader("📥 Téléchargement des modèles et ressources")
     
@@ -1231,7 +1229,7 @@ with tabs[3]:  # Onglet Téléchargements
     contient toutes les informations réglementaires et techniques nécessaires pour effectuer un contrôle
     métrologique conforme à la législation française et européenne.
     
-    [Consulter le guide sur le site de la DGCCRF](https://www.economie.gouv.fr/files/files/directions_services/dgccrf/boccrf/2014/14_06/guide_autocontrole_metrologique.pdf)
+    [Consulter le guide sur le site de la DGCCRF](https://www.economie.gouv.fr/dgccrf)
     """)
     
     # Fiches techniques
