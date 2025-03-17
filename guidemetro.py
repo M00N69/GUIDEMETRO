@@ -197,7 +197,7 @@ st.title("🔍 Validation d'échantillonnage pour le contrôle métrologique")
 st.markdown("---")
 
 # Créer un onglet
-tabs = st.tabs(["📊 Analyse", "🧪 Simulation", "📝 Documentation"])
+tabs = st.tabs(["📊 Analyse", "🧪 Simulation", "📝 Documentation", "📥 Téléchargements"])
 
 with tabs[0]:  # Onglet Analyse
     col1, col2 = st.columns([1, 1])
@@ -221,7 +221,7 @@ with tabs[0]:  # Onglet Analyse
     # Téléchargement du fichier Excel
     st.subheader("📤 Téléchargement du fichier Excel de pesée")
     
-    col1, col2 = st.columns([2, 1])
+    col1, col2, col3 = st.columns([2, 1, 1])
     with col1:
         uploaded_file = st.file_uploader("Choisir un fichier Excel", type=["xlsx"])
     with col2:
@@ -241,6 +241,15 @@ with tabs[0]:  # Onglet Analyse
                 
                 # Afficher un message de succès
                 st.success("Données de test générées avec succès!")
+    with col3:
+        st.markdown("**Besoin d'un modèle?**")
+        st.markdown("""
+        <a href="#" onclick="document.getElementById('tabs-4').click();" style="text-decoration:none;">
+            <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; text-align:center; margin-top:10px;">
+                📥 Télécharger un modèle<br>Excel vierge
+            </div>
+        </a>
+        """, unsafe_allow_html=True)
 
     # Traitement lorsqu'un fichier est téléchargé
     if uploaded_file is not None:
@@ -1059,6 +1068,191 @@ with tabs[2]:  # Onglet Documentation
         2. **Optimiser l'échantillonnage** :
            - Utilisez un effectif d'échantillon plus grand mais une fréquence plus faible
         """)
+
+# ----- FONCTIONS DE TÉLÉCHARGEMENT -----
+
+# Fonction pour créer un fichier Excel modèle
+def creer_fichier_excel_modele():
+    """
+    Crée un fichier Excel modèle avec les colonnes nécessaires pour l'analyse
+    et quelques exemples de données.
+    """
+    output = BytesIO()
+    workbook = xlsxwriter.Workbook(output)
+    
+    # Format pour les en-têtes
+    header_format = workbook.add_format({
+        'bold': True,
+        'bg_color': '#4472C4',
+        'font_color': 'white',
+        'border': 1,
+        'align': 'center'
+    })
+    
+    # Format pour les cellules
+    cell_format = workbook.add_format({
+        'border': 1
+    })
+    
+    # Format pour les instructions
+    instruction_format = workbook.add_format({
+        'italic': True,
+        'font_color': '#666666'
+    })
+    
+    # Créer la feuille de pesées
+    worksheet = workbook.add_worksheet("Pesées")
+    
+    # Définir la largeur des colonnes
+    worksheet.set_column('A:B', 15)
+    worksheet.set_column('C:C', 30)
+    
+    # Ajouter les en-têtes
+    worksheet.write('A1', 'Tare (g)', header_format)
+    worksheet.write('B1', 'Poids Brut (g)', header_format)
+    worksheet.write('C1', 'Notes (optionnel)', header_format)
+    
+    # Ajouter des exemples de données (5 lignes)
+    exemple_tares = [15.2, 15.3, 15.1, 15.4, 15.2]
+    exemple_bruts = [515.6, 516.2, 514.8, 515.9, 516.3]
+    
+    for i, (tare, brut) in enumerate(zip(exemple_tares, exemple_bruts), start=2):
+        worksheet.write(f'A{i}', tare, cell_format)
+        worksheet.write(f'B{i}', brut, cell_format)
+        worksheet.write(f'C{i}', "", cell_format)
+    
+    # Ajouter des instructions
+    worksheet.merge_range('A8:C8', 'Instructions d\'utilisation:', instruction_format)
+    instructions = [
+        "1. Saisissez les poids des emballages vides dans la colonne 'Tare (g)'.",
+        "2. Saisissez les poids bruts des packs remplis dans la colonne 'Poids Brut (g)'.",
+        "3. La colonne 'Notes' est optionnelle et peut être utilisée pour des commentaires.",
+        "4. Vous pouvez supprimer les exemples et ajouter autant de lignes que nécessaire.",
+        "5. Assurez-vous de conserver le nom de la feuille 'Pesées' et les en-têtes des colonnes."
+    ]
+    
+    for i, instruction in enumerate(instructions, start=9):
+        worksheet.merge_range(f'A{i}:C{i}', instruction, instruction_format)
+    
+    # Fermer le workbook
+    workbook.close()
+    
+    return output.getvalue()
+
+with tabs[3]:  # Onglet Téléchargements
+    st.subheader("📥 Téléchargement des modèles et ressources")
+    
+    st.markdown("""
+    Cette section vous permet de télécharger des fichiers modèles et des ressources pour vous aider dans votre contrôle métrologique.
+    """)
+    
+    # Section pour le téléchargement du modèle Excel
+    st.markdown("### Fichier Excel modèle pour les pesées")
+    
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        st.markdown("""
+        Ce fichier Excel modèle contient les colonnes nécessaires pour l'analyse de vos pesées :
+        
+        - **Tare (g)** : Poids des emballages vides
+        - **Poids Brut (g)** : Poids total du produit emballé
+        - **Notes** : Champ optionnel pour vos commentaires
+        
+        Le fichier inclut également quelques exemples de données et des instructions d'utilisation.
+        """)
+    
+    with col2:
+        # Image d'aperçu du fichier Excel
+        st.markdown("""
+        <div style="border:1px solid #ddd; padding:10px; text-align:center;">
+            <h4>Aperçu du modèle</h4>
+            <div style="background-color:#f0f0f0; padding:10px; font-family:monospace; font-size:12px; text-align:left;">
+                <b>Tare (g) | Poids Brut (g) | Notes</b><br>
+                15.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 515.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                15.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 516.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                15.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 514.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+                ...
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    # Bouton pour télécharger le modèle
+    excel_file = creer_fichier_excel_modele()
+    st.download_button(
+        label="📥 Télécharger le modèle Excel",
+        data=excel_file,
+        file_name="modele_pesees.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        help="Téléchargez ce fichier Excel et remplissez-le avec vos données de pesée."
+    )
+    
+    # Instructions étape par étape
+    with st.expander("Comment utiliser ce fichier Excel"):
+        st.markdown("""
+        ### Instructions d'utilisation pas à pas
+        
+        1. **Téléchargement du fichier modèle** :
+           - Cliquez sur le bouton "Télécharger le modèle Excel" ci-dessus
+           - Enregistrez le fichier sur votre ordinateur
+        
+        2. **Saisie de vos données** :
+           - Ouvrez le fichier avec Microsoft Excel, LibreOffice Calc ou un logiciel équivalent
+           - Supprimez les exemples de données si nécessaire
+           - Saisissez les poids des emballages vides dans la colonne 'Tare (g)'
+           - Saisissez les poids bruts des packs remplis dans la colonne 'Poids Brut (g)'
+           - Ajoutez des notes dans la dernière colonne si nécessaire
+        
+        3. **Enregistrement du fichier complété** :
+           - Enregistrez le fichier Excel complété
+           - Assurez-vous de conserver le nom de la feuille 'Pesées' et les en-têtes des colonnes
+        
+        4. **Téléchargement dans l'application** :
+           - Retournez dans l'onglet "Analyse" de cette application
+           - Téléchargez votre fichier Excel complété via le sélecteur de fichier
+           - L'application analysera automatiquement vos données
+        """)
+    
+    # Section pour les ressources documentaires
+    st.markdown("### Ressources documentaires")
+    
+    # Guide DGCCRF
+    st.markdown("""
+    #### Guide de bonnes pratiques DGCCRF
+    
+    Le guide de bonnes pratiques pour le contrôle métrologique des préemballages publié par la DGCCRF
+    contient toutes les informations réglementaires et techniques nécessaires pour effectuer un contrôle
+    métrologique conforme à la législation française et européenne.
+    
+    [Consulter le guide sur le site de la DGCCRF](https://www.economie.gouv.fr/dgccrf)
+    """)
+    
+    # Fiches techniques
+    st.markdown("""
+    #### Fiches techniques
+    
+    Ces fiches techniques résument les points essentiels du contrôle métrologique et peuvent être
+    utilisées comme aide-mémoire dans votre processus de contrôle qualité.
+    """)
+    
+    # Liste des fiches techniques (fictives pour l'instant)
+    fiches = [
+        {"titre": "Calcul de l'erreur maximale tolérée (EMT)", "description": "Comment calculer l'EMT selon la quantité nominale"},
+        {"titre": "Interprétation des résultats statistiques", "description": "Guide d'interprétation des résultats d'analyse"},
+        {"titre": "Optimisation du plan d'échantillonnage", "description": "Stratégies pour optimiser votre plan d'échantillonnage"}
+    ]
+    
+    # Affichage des fiches techniques
+    for i, fiche in enumerate(fiches):
+        st.markdown(f"""
+        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px; border-radius:5px;">
+            <h5>{fiche['titre']}</h5>
+            <p>{fiche['description']}</p>
+            <button disabled style="background-color:#e0e0e0; padding:5px 10px; border:none; border-radius:3px;">
+                Bientôt disponible
+            </button>
+        </div>
+        """, unsafe_allow_html=True)
 
 # Pied de page
 st.markdown("---")
