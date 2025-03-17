@@ -204,10 +204,10 @@ with tabs[0]:  # Onglet Analyse
     
     with col1:
         st.subheader("Hypothèses de travail")
-        qn = st.number_input("Quantité Nominale (g):", value=500, min_value=1.0, help="Poids nominal indiqué sur l'emballage.")
+        qn = st.number_input("Quantité Nominale (g):", value=500.0, min_value=1.0, help="Poids nominal indiqué sur l'emballage.")
         # Calculer automatiquement l'EMT selon la réglementation
         e_calc = calculer_emt(qn)
-        e = st.number_input("Erreur maximale tolérée (g):", value=e_calc, help=f"Valeur calculée selon l'annexe 5 du guide DGCCRF: {e_calc:.2f}g")
+        e = st.number_input("Erreur maximale tolérée (g):", value=float(e_calc), min_value=0.1, help=f"Valeur calculée selon l'annexe 5 du guide DGCCRF: {e_calc:.2f}g")
         surpoids_max = st.number_input("Surpoids maximum toléré (g):", value=2.0, min_value=0.0, help="Surpoids maximal acceptable pour chaque pack.")
     
     with col2:
@@ -215,7 +215,7 @@ with tabs[0]:  # Onglet Analyse
         n_options = list(COEF_G.keys())
         n_index = n_options.index(5) if 5 in n_options else 0
         n = st.selectbox("Effectif d'échantillon:", n_options, index=n_index, help="Nombre de packs à peser dans chaque échantillon.")
-        frequence = st.number_input("Fréquence d'échantillonnage (par heure):", value=1, min_value=1, help="Nombre d'échantillons à contrôler par heure.")
+        frequence = st.number_input("Fréquence d'échantillonnage (par heure):", value=1.0, min_value=1.0, help="Nombre d'échantillons à contrôler par heure.")
         max_defectueux = st.number_input("Nombre max de défectueux tolérés pour 100 unités:", value=2.5, min_value=0.0, max_value=10.0, help="Selon la règle des 2,5%")
 
     # Téléchargement du fichier Excel
@@ -701,8 +701,8 @@ with tabs[1]:  # Onglet Simulation
     
     with col1:
         st.subheader("Paramètres du processus")
-        sim_qn = st.number_input("Quantité Nominale (g):", value=500, min_value=1.0, key="sim_qn")
-        sim_e = st.number_input("Erreur maximale tolérée (g):", value=calculer_emt(sim_qn), key="sim_e")
+        sim_qn = st.number_input("Quantité Nominale (g):", value=500.0, min_value=1.0, key="sim_qn")
+        sim_e = st.number_input("Erreur maximale tolérée (g):", value=float(calculer_emt(sim_qn)), min_value=0.1, key="sim_e")
         sim_sigma = st.slider("Écart-type du processus (g):", min_value=1.0, max_value=20.0, value=5.0, step=0.5, key="sim_sigma")
         sim_centrage = st.slider("Centrage du processus (% de QN):", min_value=95.0, max_value=105.0, value=100.0, step=0.1, key="sim_centrage")
     
@@ -711,7 +711,7 @@ with tabs[1]:  # Onglet Simulation
         sim_n_options = list(COEF_G.keys())
         sim_n_index = sim_n_options.index(5) if 5 in sim_n_options else 0
         sim_n = st.selectbox("Effectif d'échantillon:", sim_n_options, index=sim_n_index, key="sim_n")
-        sim_frequence = st.number_input("Fréquence d'échantillonnage (par heure):", value=1, min_value=1, key="sim_freq")
+        sim_frequence = st.number_input("Fréquence d'échantillonnage (par heure):", value=1.0, min_value=1.0, key="sim_freq")
         sim_surpoids = st.number_input("Surpoids maximum toléré (g):", value=2.0, min_value=0.0, key="sim_surpoids")
     
     # Bouton pour lancer la simulation
